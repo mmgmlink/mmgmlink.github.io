@@ -55,7 +55,7 @@
 		let searchParams = new URLSearchParams(url.search);
 		$scope.test=searchParams.get('q');
 
-		$http({ method: 'GET', url: 'delhi.json'})
+		$http({ method: 'GET', url: 'pincodes.json'})
 		.then(function (success){
 			$scope.offices = success.data;
 			},function (error){

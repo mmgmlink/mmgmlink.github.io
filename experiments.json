@@ -7,7 +7,7 @@
       "listw":"col-md-4",
       "links":[
 		 {
-            "link":"contact.html",
+            "link":"contacts.html",
             "text":"Contact page - consolidated",
             "tags":["APFC","RPFC","ACC","COMP"]
          },{
@@ -25,7 +25,7 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"delhi.html",
+            "link":"pincodes.html",
             "text":"Pin code list of Bifurcated offices",
             "tags":["APFC","RPFC","ACC"]
          },
