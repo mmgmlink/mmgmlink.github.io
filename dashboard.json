@@ -1,0 +1,268 @@
+[
+   [ 
+   {
+      "title":"Frequently Used",
+      "class":"panel-primary",
+      "width":"col-md-8",
+      "listw":"col-md-6",
+      "links":[
+         {
+            "link":"https://www.epfindia.gov.in",
+            "text":"Main Website",
+            "tags":["APFC","RPFC", "COMP"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/prtest/",
+            "text":"MIS Website",
+            "tags":["APFC","RPFC", "COMP"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/fointerface/",
+            "text":"Unified Portal",
+            "tags":["APFC","ACCOUNTS","RPFC","COMP"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/caiu/",
+            "text":"CAIU Login",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
+            "link":"http://eproceedings.epfindia.gov.in ",
+            "text":"E-court Website",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         
+         {
+            "link":"https://sparrow-epfo.eoffice.gov.in/SPARROWEPFO/LoginPage.action",
+            "text":"Sparrow",
+            "tags":["APFC","RPFC"]
+         },
+         {
+            "link":"https://www.limbs.gov.in/",
+            "text":"LIMBS",
+            "tags":["APFC","LEGAL"]
+         },
+         {
+            "link":"https://www.epfigms.gov.in/epfoffice/",
+            "text":"EPFIGMS",
+            "tags":["APFC","RPFC", "PGHS"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
+            "text":"Establishment Search",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
+            "link":"https://gem.gov.in/",
+            "text":"GEM Portal",
+            "tags":["APFC", "ADMIN"]
+         },
+         {
+            "link":"https://shramsuvidha.gov.in/home",
+            "text":"Shram Suvidha Portal",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
+            "link":"https://pgportal.gov.in/cpgoffice/",
+            "text":"CPGRAM Website",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
+            "link":"https://rtionline.gov.in/RTIMIS/login/",
+            "text":"RTI MIS",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
+            "link":"https://pmrpy.gov.in/",
+            "text":"PMRPY Website",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"https://mail.gov.in",
+            "text":"NIC Mail Website",
+            "tags":["APFC"]
+         },
+         {
+            "link":"https://www.epfindia.gov.in/site_en/circulars.php",
+            "text":"Office circulars Page",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"https://www.epfindia.gov.in/site_en/app_tfr_post.php",
+            "text":"Transfers Page",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"https://hr.epfindia.gov.in/hrm/login.aspx",
+            "text":"HRM Website",
+            "tags":["APFC"]
+         },
+         {
+            "link":"https://esamiksha.gov.in/",
+            "text":"E-samiksha Website",
+            "tags":["APFC","RPFC", "COMP"]
+         }
+      ]
+   },
+   {
+      "title":"Dashboards",
+      "class":"panel-success",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://epfindia.gov.in/site_docs/PDFs/dashboard/dashboard_key_parameter.pdf",
+            "text":"Dashboard Key Parameters",
+            "tags":["APFC","RPFC","ACC"]
+         },
+		 {
+            "link":"https://epfoportals.epfindia.gov.in/MIS2_0/",
+            "text":"MIS 2.0",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://10.1.1.63:8080/Form9DashBoard/",
+            "text":"Form 9 Dashboard(internal/MPLS)",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard",
+            "text":"Dashboard KYC",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"http://eproceedings.epfindia.gov.in/epfo/dashboard.php",
+            "text":"E-Proceedings Dashboard",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/",
+            "text":"E-KYC Portal",
+            "tags":["APFC","RPFC","ACC"]
+         }
+      ]
+   }
+   ],
+   [
+   {
+      "title":"Employer",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/",
+            "text":"Unified portal (Establishment)",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
+            "text":"Establishment Search",
+            "tags":["APFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://epfindia.gov.in/site_en/Principal_Employer.php",
+            "text":"Principal Employer",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/TRRN_SEARCH/",
+            "text":"TRRN SEARCH (Old)",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadSearchTrrnHome",
+            "text":"TRRN SEARCH (New)",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner",
+            "text":"Establishment Registration",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         }
+      ]
+   },
+   {
+      "title":"Employee",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+            "text":"Unified Portal (Member Interface)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c&hl=en",
+            "text":"UMANG ANDROID APP",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login",
+            "text":"Passbook",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://passbook.epfindia.gov.in/MemClaimStatusUAN/",
+            "text":"Claim Status(UAN)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://www.epfindia.gov.in/site_en/KYCS.php",
+            "text":"Claim Status(Member Id)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"tel:011-22901406",
+            "text":"Miss Call 011-22901406 for fund detail",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"#",
+            "text":"Send SMS 'EPFOHO UAN' to 7738299899",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
+            "text":"Link UAN with Aadhaar",
+            "tags":["APFC", "EMPLOYEE"]
+         },		 
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/trackUan",
+            "text":"Track E-KYC",
+            "tags":["APFC", "EMPLOYEE"]
+         }
+      ]
+   },
+   {
+      "title":"Pensioner",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://mis.epfindia.gov.in/PensionPaymentEnquiry/",
+            "text":"Pensioners Portal",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/JeevanPramaan//",
+            "text":"JeevanPramaan Dashboard",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/PensionDashboard/",
+            "text":"Pensioners Dashboard",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://jeevanpramaan.gov.in/ppouser/login",
+            "text":"Jeevan Pramaan Website - DLC Status ",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://resident.uidai.gov.in/aadhaarverification",
+            "text":"Aadhaar Verification",
+            "tags":["APFC","PENSION"]
+         }
+      ]
+   }
+   ]
+]

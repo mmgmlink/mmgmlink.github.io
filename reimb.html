@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Re-imbursement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+</head>
+
+<body>
+    	<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+	<div class="btn-group">
+			<a href="./" class="btn btn-sq-lg btn-default"><i class="fa fa-user"> Back</i></a>
+	</div>
+	<h3>Circulars</h3>
+		<h5>till 30 Sept, 2021 Wait 2-5 seconds to load</h5>
+
+<div class="panel panel-default">
+			<div class="panel-heading">
+				<input type="text" style="width:100%; padding:4px;" placeholder="Search by Name or Office " ng-model="test" />
+			</div>
+		</div>
+
+				
+	<div class="table-responsive">
+            <table class="table table-condensed table-hover table-bordered table-striped">
+              <thead>
+                <tr>
+                <th class="col-md-1" >Sr_no.</th>
+		<th class="col-md-8">Subject</th>
+		<th class="col-md-1">Link</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr ng-repeat="x in circulars | filter:test">
+                    <td>{{x.sr_no}}</td>
+		    <td>{{x.subject}}</td>
+		    <td><a ng-if="x.link.length!=0" href="{{x.link}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
+		    </tr>
+              </tbody>
+            </table>
+
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+  var app = angular.module('myApp', ['ngCookies']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+									$scope.names = [];
+									let url = new URL(window.location);
+									let searchParams = new URLSearchParams(url.search);
+									$scope.test=searchParams.get('q') || " ";
+
+                                 $http({
+                                   method: 'GET',
+                                   url: 'reimb.json'
+                                 }).then(function (success){
+                                   $scope.circulars = success.data;
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+  //]]>
+  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36392471-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-36392471-2');
+</script>
+</body>
+</html>

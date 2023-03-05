@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAQs 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+.list-group {
+	margin-bottom:0px;
+}
+.vis-hidden{
+     visibility: hidden;
+  }
+	.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
+h3 a {
+
+color:#fff;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+		<div class="btn-group">
+			<a href="./" class="btn btn-sq-lg btn-default"><i class="fa fa-user"> Back</i></a>
+		</div>
+		<div class="row">
+			<h2>Frequently Asked Questions</h2>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<input type="text" style="width:100%; padding:4px;" placeholder="Search by keyword..." ng-model="test" />
+				</div>
+			</div>
+			<div class="btn-group">	
+			<button type="button" ng-click="change_tag('')" ng-class="{'active':(tag == '')}" class="btn btn-default">All</button>
+			<button type="button" ng-click="change_tag('employee')" ng-class="{'active':(tag == 'employee')}" class="btn btn-default">Employee</button>
+			<button type="button" ng-click="change_tag('employer')"     ng-class="{'active':(tag == 'employer')}"     class="btn btn-default">Employer</button>	            
+			<button type="button" ng-click="change_tag('claim')" ng-class="{'active':(tag == 'claim')}" class="btn btn-default">Claim</button> 
+			<button type="button" ng-click="change_tag('transfer')" ng-class="{'active':(tag == 'transfer')}" class="btn btn-default">Transfer</button> 
+			<button type="button" ng-click="change_tag('nomination')" ng-class="{'active':(tag == 'nomination')}" class="btn btn-default">Nomination</button> 
+			<button type="button" ng-click="change_tag('contribution')" ng-class="{'active':(tag == 'contribution')}" class="btn btn-default">Contribution</button> 
+			<button type="button" ng-click="change_tag('membership')" ng-class="{'active':(tag == 'membership')}" class="btn btn-default">Membership</button>
+			<button type="button" ng-click="change_tag('pension')" ng-class="{'active':(tag == 'pension')}" class="btn btn-default">Pension</button>
+			<button type="button" ng-click="change_tag('edli')" ng-class="{'active':(tag == 'edli')}" class="btn btn-default">EDLI</button>
+			<button type="button" ng-click="change_tag('advance')"  ng-class="{'active':(tag == 'advance')}"  class="btn btn-default">Advance</button>
+			<button type="button" ng-click="change_tag('interest')"  ng-class="{'active':(tag == 'interest')}"  class="btn btn-default">Interest</button>			
+            <button type="button" ng-click="change_tag('uan')"  ng-class="{'active':(tag == 'uan')}"  class="btn btn-default">UAN</button>
+        </div>
+		  
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" ng-repeat="x in offices  | filter:{'tags':  tag, sr:test}">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q{{x.sr}}" class="collapsed" aria-expanded="false">Q.{{x.sr}} <span ng-bind-html="x.question"></span> </a>
+						</h4>
+					</div>
+					<div id="Q{{x.sr}}" class="panel-collapse collapse" aria-expanded="false" style="">
+						<div class="panel-body">
+							<p ng-bind-html="x.answer"></p> 
+							<iframe width="560" height="315" ng-if="x.yt" ng-src="{{x.yt | trustThisUrl}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						
+						</div>
+						
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+<script type="text/javascript">
+
+//<![CDATA[
+
+  var app = angular.module('myApp', ['ngCookies','ngSanitize']);
+ 
+  angular.module("myApp").filter('trustThisUrl', ['$sce', function ($sce) {
+        return function (val) {
+            return $sce.trustAsResourceUrl(val);
+        };
+    }]);
+  
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+			let url = new URL(window.location);
+			let searchParams = new URLSearchParams(url.search);
+			$scope.test=searchParams.get('q');
+            $scope.change_tag = function (tag){
+                $scope.tag = tag;
+                $cookies.put('selected_tag', tag);
+				$scope.test ='';
+            };
+			if($scope.test) {
+				print($scope.test);
+				$scope.tag = '';
+			} else {
+				$scope.test = '';
+			}
+			var favoriteCookie = $cookies.get('selected_tag');
+			if (favoriteCookie) {
+				$scope.tag = favoriteCookie;
+			} else {
+				$scope.tag = '';
+				$cookies.put('selected_tag', '');
+			}
+			$http({
+					method: 'GET',
+					url: 'faq2.json'
+				}).then(function (success){
+					$scope.offices = success.data;
+				},function (error){
+					console.log(error)
+				});
+			}]);
+  //]]>
+  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36392471-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36392471-2');
+</script>
+
+</body>
+</html>

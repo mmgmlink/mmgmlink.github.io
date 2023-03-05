@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+.list-group {
+	margin-bottom:0px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+</head>
+<body>
+    	<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+	<h3>Dashboard</h3>
+	<a style="color:#000" target="_blank" href="./contacts"><span aria-hidden="true" class="pull-right glyphicon glyphicon-phone-alt"></span></a>
+	<div class="btn-group">
+  <button type="button" ng-click="change('')" class="btn btn-default">All</button>
+  <button type="button" ng-click="change('ACC')" class="btn btn-default">ACC</button>
+  <button type="button" ng-click="change('RPFC')" class="btn btn-default">RPFC</button>
+  <button type="button" ng-click="change('APFC')" class="btn btn-default">APFC</button>
+  <button type="button" ng-click="change('COMP')" class="btn btn-default">Compliance</button>
+  <button type="button" ng-click="change('PENSION')" class="btn btn-default">Pension</button>
+  <button type="button" ng-click="change('ADMIN')" class="btn btn-default">Admin</button>
+  <button type="button" ng-click="change('ACCOUNTS')" class="btn btn-default">Accounts</button>
+  <button type="button" ng-click="change('CASH')" class="btn btn-default">Cash</button>
+  <button type="button" ng-click="change('PGHS')" class="btn btn-default">PGHS</button>
+  <button type="button" ng-click="change('LEGAL')" class="btn btn-default">Legal</button>
+</div> 
+		<div ng-repeat="rows in data" class="row">
+	<div ng-repeat="x in rows" class="{{x.width}}">
+		<div class="panel {{x.class}}" ng-show="(x.links| filter:{'tags':  test}).length!=0">
+			<div class="panel-heading">{{x.title}}</div>
+			<div class="panel-body">
+				<div class="list-group">
+				<a ng-repeat="item in x.links | filter:{'tags':  test}" href="{{item.link}}" target="_blank" class="list-group-item {{x.listw}}">{{item.text}}</a>
+	
+				</div>
+			</div>
+		</div>		
+	</div>
+		</div>
+		
+	
+  
+		
+	</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+  }); 
+  var app = angular.module('myApp', ['ngCookies']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+                                 $scope.data = [];
+                                 $scope.test='';
+                                 var favoriteCookie = $cookies.get('cookieval');
+  				if ( favoriteCookie ) {
+   					$scope.test= favoriteCookie
+  				} else {
+    				$scope.test='';
+    				$cookies.put('cookieval','');
+  				}
+                                $scope.change = function(text) {
+                                  $scope.test=text;
+                                  $cookies.put('cookieval',text);
+                                  console.log(text);
+                                 };
+
+                                 $http({
+                                   method: 'GET',
+                                   url: 'contents.json'
+                                 }).then(function (success){
+                                   $scope.data = success.data;
+                                   console.log($scope.links);
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+		</script>
+	</body>
+</html>

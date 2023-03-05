@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-Frame-Options" content="allow">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+	@media only screen and (max-width:620px) {
+
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+.navbar .nav.pull-right {
+   margin-left: 0.625em;
+   margin-top: 2.5em;
+   margin-right: 0;
+   background-image: url('../img/menuBG.png');
+   background-repeat: no-repeat;
+   height:3.5em;
+}
+.list-group {
+	margin-bottom:0px;
+}
+.vis-hidden{
+     visibility: hidden;
+  }
+	.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+	<div class="btn-group">
+			<a target="_blank" href="/" class="btn btn-sq-lg btn-default"><i class="fa fa-home"></i></a>
+			<button type="button" ng-click="change('PENSION')" ng-class="{'active':(test=='PENSION')}" class="btn btn-default">Pensioner</button>
+			<button type="button" ng-click="change('EMPLOYEE')" ng-class="{'active':(test=='EMPLOYEE')}" class="btn btn-default">Employee</button>
+			<button type="button" ng-click="change('EMPLOYER')" ng-class="{'active':(test=='EMPLOYER')}" class="btn btn-default">Employer</button>
+			<button type="button" ng-click="change('APFC')" ng-class="{'active':(test=='APFC')}" class="btn btn-default">Office</button>
+			<a href="./experiments" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Experiments</a>
+	</div>
+	<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="https://www.youtube.com/watch/46HSjSCot0g">Want to know more about EPFO? Watch video by clicking here</a>
+				</h4>
+			</div>
+	</div>
+
+<div ng-repeat="rows in data" class="row">
+	<div ng-repeat="x in rows" class="{{x.width}}" ng-if="(x.links| filter:{'tags':  test}).length!=0">
+		<div class="panel {{x.class}}">
+			<div class="panel-heading">{{x.title}}</div>
+			<div class="panel-body">
+				<div class="list-group">
+				<a ng-repeat="item in x.links | filter:{'tags':  test}" href="{{item.link}}" target="_blank" class="list-group-item {{x.listw}}">{{item.text}}</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>	
+</div>	
+<div class="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="copyright">2017, No Copyrights</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="design">
+					<a target="_blank" href="https://github.com/epfindia/epfindia.github.io">Want to contribute?</a> | <a target="_blank" href="https://github.com/epfindia/epfindia.github.io/issues/new">Have any suggestions?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</body>
+<script type="text/javascript">
+  var app = angular.module('myApp', ['ngCookies']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+                                 $scope.data = [];
+                                 var favoriteCookie = $cookies.get('cookieval');
+  				if ( favoriteCookie ) {
+   					$scope.test= favoriteCookie
+  				} else {
+    					$scope.test='APFC';
+    					$cookies.put('cookieval','');
+  				}
+                                $scope.change = function(text) {
+                                  $scope.test=text;
+                                  $cookies.put('cookieval',text);
+                                 };
+                                 $http({
+                                   method: 'GET',
+                                   url: 'contents.json'
+                                 }).then(function (success){
+                                   $scope.data = success.data;
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36392471-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36392471-2');
+</script>
+
+</html>

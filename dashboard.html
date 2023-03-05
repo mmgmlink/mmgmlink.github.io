@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="./js/chart.min.js"></script>
+	<script src="./js/utils.js"></script>
+		<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+
+<body ng-app="myApp">
+<div class="jumbotron">
+<div class="row w-100">
+        <div id="randomizeData" class="col-md-3">
+            <div class="card border-info mx-sm-1 p-1">
+                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <a href="#!est" class="text-info text-center mt-3"><h4>Estbalishments</h4></a>
+                <div class="text-info text-center mt-2"><h1>6,57,777</h1></div>
+            </div>
+        </div>
+        <div id="randomizeData2" class="col-md-3">
+            <div class="card border-success mx-sm-1 p-1">
+                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-users" aria-hidden="true"></span></div>
+                <a href="#!mem" class="text-success text-center mt-3"><h4>Members</h4></a>
+                <div class="text-success text-center mt-2"><h1>5,55,67,456</h1></div>
+            </div>
+        </div>
+        <div id="randomizeData3" class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-1">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-user" aria-hidden="true"></span></div>
+                <a href="#!pen" class="text-danger text-center mt-3"><h4>Pensioners</h4></a>
+                <div class="text-danger text-center mt-2"><h1>6,65,6000</h1></div>
+            </div>
+        </div>
+        <div id="randomizeData4" class="col-md-3">
+            <div class="card border-warning mx-sm-1 p-1">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div>
+                <a href="#!/claim" class="text-warning text-center mt-3"><h4>Claims</h4></a>
+                <div class="text-warning text-center mt-2"><h1>1,65,45,234</h1></div>
+            </div>
+        </div>
+     </div>
+</div>	
+</div>
+<div ng-view></div>
+
+<div id="">
+		
+		
+</div>
+<div class="container canvas-holder">
+  <div class="row">
+    <div class="col-sm">
+      <canvas id="chart-area"></canvas>
+    </div>
+    <div class="col-sm">
+     <canvas id="canvas"></canvas>
+    </div>
+  </div>
+</div>
+	<!--<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
+	<button id="changeCircleSize">Semi/Full Circle</button>
+	-->
+	<script>
+	/*Variables doughnut*/
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green',
+					'Blue'
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Chart.js Doughnut Chart'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+		
+		var updateChart1 = function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+			});
+
+			window.myDoughnut.update();
+		};
+		
+		var colorNames = Object.keys(window.chartColors);
+		/*----------------------*/
+		
+		/*variables bar chart*/
+				var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var color = Chart.helpers.color;
+		var barChartData = {
+			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			datasets: [{
+				label: 'Dataset 1',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+				data: [
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor()
+				]
+			}, {
+				label: 'Dataset 2',
+				backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.blue,
+				borderWidth: 1,
+				data: [
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor()
+				]
+			}]
+
+		};
+		
+		var updateChart2 = function() {
+			var zero = Math.random() < 0.2 ? true : false;
+			barChartData.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+
+			});
+			window.myBar.update();
+		};
+		
+		var updateChart = function(){
+		
+		updateChart1();
+		updateChart2();
+		
+		};
+		var bar_chart = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart'
+					}
+				}
+			});
+
+		};
+
+		var doughnut_chart = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx, config);
+		};
+
+		
+
+
+		
+		
+		// Shorthand for $( document ).ready()
+		$(function() {
+		bar_chart();
+		doughnut_chart();
+		document.getElementById('randomizeData').addEventListener('click', updateChart);
+		document.getElementById('randomizeData2').addEventListener('click', updateChart);
+		document.getElementById('randomizeData3').addEventListener('click', updateChart);
+		document.getElementById('randomizeData4').addEventListener('click', updateChart);
+		});
+	</script>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "pages/home.html",
+        controller : "claimCtrl"
+    })
+    .when("/est", {
+        templateUrl : "pages/home.html",
+        controller : "estCtrl"
+    })
+    .when("/mem", {
+        templateUrl : "pages/home.html",
+        controller : "memCtrl"
+    })
+	.when("/pen", {
+        templateUrl : "pages/home.html",
+        controller : "penCtrl"
+    })
+	.when("/claim", {
+        templateUrl : "pages/home.html",
+        controller : "claimCtrl"
+    })
+	.otherwise({
+    template : "<h1>None</h1><p>Nothing has been selected</p>"
+  });;
+});
+app.controller("claimCtrl", function ($scope) {
+    $scope.msg = "Claims";
+	
+});
+app.controller("penCtrl", function ($scope) {
+    $scope.msg = "Pensioners";
+});
+app.controller("memCtrl", function ($scope) {
+    $scope.msg = "Members";
+});
+app.controller("estCtrl", function ($scope) {
+    $scope.msg = "Establishments";
+});
+
+	
+
+
+</script>
+
+</body>
+</html>

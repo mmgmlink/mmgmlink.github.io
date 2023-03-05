@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: ./emp/#!/*
+Disallow: ./mem/#!/*
+Disallow: https://epfindia.github.io/projections
+Disallow: https://epfindia.github.io/cpe
+Sitemap: epfindia.github.io/sitemap.xml

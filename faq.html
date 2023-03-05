@@ -1,0 +1,3457 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<style>
+			.list-group {
+			margin-bottom:0px;
+			}
+			.vis-hidden{
+			visibility: hidden;
+			}
+			.footer-bottom {
+			background-color: #15224f;
+			min-height: 30px;
+			width: 100%;
+			}
+			.copyright {
+			color: #fff;
+			line-height: 30px;
+			min-height: 30px;
+			padding: 7px 0;
+			}
+			.design {
+			color: #fff;
+			line-height: 30px;
+			min-height: 30px;
+			padding: 7px 0;
+			text-align: right;
+			}
+			.design a {
+			color: #fff;
+			}
+			
+			h3 a {
+			
+			color:#fff;
+			}
+			
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+	</head>
+	<body class="container">
+		<div class="row">
+			<h2>TOP QUERIES</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					
+					<div class="item active">
+						<img src="one.jpg" alt="Los Angeles" style="width:100%;">
+						<div class="carousel-caption">
+							<h3><a href="#Q12" alt="top query 1">How to view Passbook?</a></h3>
+							<p>###</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<img src="one.jpg" alt="Chicago" style="width:100%;">
+						<div class="carousel-caption">
+							<h3><a href="#Q13" alt="top query 1">How to file online claims?</a></h3>
+							<p>###</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<img src="one.jpg" alt="New York" style="width:100%;">
+						<div class="carousel-caption">
+							<h3><a href="#Q14" alt="top query 1">How to transfer fund from one account to another?</a></h3>
+							<p>###</p>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<h2>Frequently Asked Questions</h2>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q1" aria-expanded="true" class="">What is Social Security? Basic Introduction</a>
+						</h4>
+					</div>
+					<div id="Q1" class="panel-collapse collapse in" aria-expanded="true" style="">
+						<div class="panel-body">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/PgCMbAP20wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<ol>
+								<li>Basic introduction of Social Security</li>
+								<li>Risks for which Social Security is needed</li>
+								<li>Approaches to social Security</li>
+								<li>Some Social Security legislations in India</li>
+								<li>Funding of Social Security Schemes</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q1" aria-expanded="true" class="">What is UAN?</a>
+						</h4>
+					</div>
+					<div id="Q1" class="panel-collapse collapse in" aria-expanded="true" style="">
+						<div class="panel-body"><ol><li>UAN stands for Universal Account Number to be allotted by EPFO.</li>
+							<li>The UAN acts as an umbrella for the multiple Member IDs allotted to an individual by different establishments.</li> 
+							<li>The idea is to link multiple Member Identification Numbers (Member Id) allotted to a single member under single Universal Account Number.</li>
+							<li>This helps the member to view details of all the Member Identification Numbers (Member Id) linked to it.</li> 
+							<li>If a member is already allotted Universal Account Number (UAN) then he / she is required to provide the same on joining new establishment to enable the employer to in-turn mark the new allotted Member Identification Number (Member Id) to the already allotted Universal Identification Number (UAN).</li></ol> 
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q2" class="collapsed" aria-expanded="false">How do I get my UAN? </a>
+						</h4>
+					</div>
+					<div id="Q2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+						<div class="panel-body"><p>Contact your employer to obtain your UAN. Your UAN is readily available with employer. You can also generate a new UAN by visiting <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/no-auth/citizenRegistration/viewRegistraton" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/no-auth/citizenRegistration/viewRegistraton</a></p> </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q3" class="collapsed" aria-expanded="false">How can I access my details through portal? </a>
+						</h4>
+					</div>
+					<div id="Q3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+						<div class="panel-body"><ol><li>Members need to visit the UAN based Member Portal website i.e. <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/</a> </li>
+							<li>Initially, member will have to activate his UAN by selecting a link given â€˜Activate your UANâ€™ on the UAN Member Portal. Member should have UAN, Mobile and Member ID readily available to activate his/her UAN on the UAN Member Portal.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q4" class="collapsed" aria-expanded="false">How do I activate my UAN? </a>
+						</h4>
+					</div>
+					<div id="Q4" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Members can activate their UAN by visiting the UAN based Member Portal website i.e. <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/</a>.</li>
+							<li>Member should have UAN, Mobile and Member ID readily available to activate his/her UAN on the UAN Member Portal.</li>
+						<li>Once activated member can login to the UAN Member Portal by using his UAN as his user id and password created by him.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q5" class="collapsed" aria-expanded="false">What is the URL of the UAN Member Portal? </a>
+						</h4>
+					</div>
+					<div id="Q5" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The URL of the UAN Member Portal is <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/</a></li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q6" class="collapsed" aria-expanded="false">What are the facilities given to members through UAN driven Member Portal? </a>
+						</h4>
+					</div>
+					<div id="Q6" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The UAN driven Member Portal presently facilitates the following to members:- </p>
+							<ol><li>Download Passbook </li>
+								<li>Download UAN Card </li>
+								<li>List Previous Member IDs </li>
+								<li>Enter KYC Details </li>
+								<li>Online Claims</li> 
+							<li>Edit personal details</li></ol>
+							<strong>More services are likely to be added in future.</strong>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q7" class="collapsed" aria-expanded="false">What is my password to login to the UAN Member Portal? </a>
+						</h4>
+					</div>
+					<div id="Q7" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The password has to be created by the member only while activating his/her UAN. </li>
+							<li>The password should be alphanumeric, have minimum 1 special character and 8-25 character long. Special characters are !@#$%^&amp;*() </li>
+						<li>Sample Password: abc@1973 </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q8" class="collapsed" aria-expanded="false">Can I view/download my passbook? </a>
+						</h4>
+					</div>
+					<div id="Q8" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes. First visit <a href="https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp" alt="passbook link">https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp</a> </li>
+							<li>Enter UAN and password and You will be able to view passbooks for all the memberids corrosponsing to UAN. </li>
+						<li>Employees of exempted establishment will need to contact their employer for Passbook. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q9" class="collapsed" aria-expanded="false">Can I view/download my UAN card? </a>
+						</h4>
+					</div>
+					<div id="Q9" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, surely. You need to login first with your valid UAN and password. </li>
+							<li>Then go to "View" Menu and select an option "UAN card".</li>
+						<li>PDF of UAN card can be downloaded by selecting a link given for this particular task and accordingly, you can take a printout. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q11" class="collapsed" aria-expanded="false">What is the purpose of listing of previous Member IDs? </a>
+						</h4>
+					</div>
+					<div id="Q11" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The idea is to list multiple Member Identification Numbers (Member IDs) allotted to a single member under a single Universal Account Number (UAN).  </li>
+							<li>This will help the member to view details of all the Member Identification Numbers (Member IDs) and further enable to check the eligibility for online transfer claim through the options â€˜List Previous Member IDâ€™ and â€˜View Statusâ€™ from the Menu â€˜Previous Member IDâ€™. </li>
+							<li>In future there would be no need to list the Member IDs as it will be linked automatically on the basis of information provided in Form-11 (Declaration Form).</li>
+						<li>Member needs to disclose his/her UAN/Previous Member ID to the new employer through Form-11. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" name="Q12" href="#Q12" class="collapsed" aria-expanded="false">Can my mobile number/Email ID be changed? </a>
+						</h4>
+					</div>
+					<div id="Q12" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, you need to go to Profile Menu in the UAN Member Portal and select an option â€˜Edit Mobile No.â€™/ â€˜Edit Email IDâ€™ for changing mobile number and Email ID respectively.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" name="Q13" href="#Q13" class="collapsed" aria-expanded="false">Can I update/upload my KYC document through the UAN Member Portal? </a>
+						</h4>
+					</div>
+					<div id="Q13" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, it can be done by going to the â€˜Profileâ€™ menu and selecting â€˜Update KYC Informationâ€™ in the UAN Member Portal. The uploaded KYC document by the member has to be digitally approved by the employer. Till then, status of KYC will be shown as â€˜Pendingâ€™. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" name="Q14" href="#Q14" class="collapsed" aria-expanded="false">Which documents are considered for KYC? </a>
+						</h4>
+					</div>
+					<div id="Q14" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Following documents can be used for KYC:- 
+							<ul>
+								<li>National Population Register (NPR) </li>
+								<li>AADHAAR </li>
+								<li>Permanent Account Number (PAN) </li>
+								<li>Bank Account Number </li>
+								<li>Passport </li>
+								<li>Driving License </li>
+								<li>Election Card </li>
+								<li>Ration Card </li>
+								<li>ESIC Card (Being introduced shortly) </li>
+							</ul></li>
+							<li>However Bank Account number along with IFSC is compulsory and Aadhaar or PAN are necessary wherever issued to a member. </li>
+							<li>IFSC is to be given only against Bank Account number and not against any other type of KYC. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q15" class="collapsed" aria-expanded="false">Do I have to upload the scanned copy of the KYC document? </a>
+						</h4>
+					</div>
+					<div id="Q15" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, you need to scan the KYC document first and save it as .jpg/.gif/.png/pdf. The size of the scanned document should not exceed 300 KB.  </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q16" class="collapsed" aria-expanded="false">Can I upload multiple KYC documents? </a>
+						</h4>
+					</div>
+					<div id="Q16" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, multiple KYC documents out of the 8 specified KYC documents (Sl. Nos. 1 to 8) can be uploaded.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q17" class="collapsed" aria-expanded="false">How do I know that the KYC uploaded by me has been approved by the employer? </a>
+						</h4>
+					</div>
+					<div id="Q17" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The approval status will be shown against the uploaded KYC document on the same page.  </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q18" class="collapsed" aria-expanded="false">What is to be done in case I change the job and join somewhere else? </a>
+						</h4>
+					</div>
+					<div id="Q18" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>You need to simply declare your UAN to your subsequent employers in Form-11 (Declaration Form). </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q19" class="collapsed" aria-expanded="false">In case of change of job, do I have to get UAN again and then activate my account? </a>
+						</h4>
+					</div>
+					<div id="Q19" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>No, there is no need to obtain UAN again. It is a one-time permanent number and will remain same throughout your career.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q20" class="collapsed" aria-expanded="false">Has UAN been allotted to contract based employees (not permanent employee of Govt.)? </a>
+						</h4>
+					</div>
+					<div id="Q20" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>UAN is allotted to all contributory members of EPFO including contract based employees.</li></ol>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q21" class="collapsed" aria-expanded="false">What is the procedure of withdrawal of PF Account money and Pension Fund money under UAN portal, after leaving one establishment and joining another one? </a>
+						</h4>
+					</div>
+					<div id="Q21" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+						<div class="panel-body"><ol><li>When an employee leaves an establishment and joins another, he/she is required to get the funds and service details transferred to the new account. </li>
+						<li>The facility would provide portability from one account to another by linking the different Member IDs, if, the KYC details have been verified by both the employers. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q22" class="collapsed" aria-expanded="false">If I left one Employer and joined another one, can I transfer money from one account to another? But on withdrawal day who will sign my claim forms 19 and 10-C? Do I have to fill up two forms, one from previous contractor and one from current or I can transfer my PF account &amp; Pension Fund money direct to my bank account? </a>
+						</h4>
+					</div>
+					<div id="Q22" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, the PF amount and service details from previous account to present account can be transferred. </li>
+							<li>After transfer of funds, the withdrawal forms are required to be signed by only the present employer. </li>
+						<li>There is no need to fill up two forms by member once the previous account has been transferred to the present account. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q23" class="collapsed" aria-expanded="false">Contractor normally in India hide PF account and Pension Fund information from theirs employee who are working under his/her contract. Can I know my UAN number, if I have my PF account number? </a>
+						</h4>
+					</div>
+					<div id="Q23" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>If the member is having a PF account number, a facility has been provided on EPFO website at <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/</a>check_uan_status.php whereby member can get to know whether UAN has been allotted for his/her PF account number or not.  </li>
+						<li>If it has been allotted, member can definitely obtain it from his/her contractor/employer. Even after getting to know the allotment of UAN through EPFO Website, if member is not getting the UAN from his contractor/employer, he/she can contact concerned or nearest EPFO Field Office. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q24" class="collapsed" aria-expanded="false">Am I able to make changes in PF account information, if they are not correct as per my knowledge? </a>
+						</h4>
+					</div>
+					<div id="Q24" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>For any change/correction in name &amp; other details in EPF database, you need to apply for the same along with supporting documents through your employer only. The procedure has been detailed on EPFO Website at http://www.epfindia.gov.in/site_docs/PDFs/MiscPDFs/ChangeName_Process.pdf </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q25" class="collapsed" aria-expanded="false">I am not able to see the Passbook or Passbook is not available? </a>
+						</h4>
+					</div>
+					<div id="Q25" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>In case you are working in an Exempted Establishment (PF managed by Company itself and Pension fund by EPF Organisation) then your passbook will not be available in the UAN portal. You may contact your establishment to get the PF statement. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q26" class="collapsed" aria-expanded="false">What benefits will I get for completing KYC process? </a>
+						</h4>
+					</div>
+					<div id="Q26" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>- Members with KYC completed will benefits with following services </p>
+							<ol><li>Smooth transfer of Service </li>
+								<li>Smooth withdrawal of PF Amount </li>
+								<li>Transparency in their accounts</li>
+							<li>Members who have activated their account would get a monthly SMS intimation of their monthly PF </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q27" class="collapsed" aria-expanded="false">How and who will carry out KYC activity? </a>
+						</h4>
+					</div>
+					<div id="Q27" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><strong>By Member: </strong>
+							<ol><li>Member can upload the KYC details through UAN portal. Please refer FAQ: What are valid KYC documents- For detail. </li>
+							<li>The Status of KYC initially will be marked as Pending and once approved by the Employer through a Digital Signature, the status will be shown as Verified.</li></ol>
+							<strong>By Employer: </strong>
+							<ol><li>Employer can upload the KYC through bulk text file and subsequently approving through a Digital Signature only.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q28" class="collapsed" aria-expanded="false">Personal particulars are not correct in UAN Card. How do I correct these details? </a>
+						</h4>
+					</div>
+					<div id="Q28" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Members should submit correct details to its employer along with proof of document. Employer will certify and submit information to concerned Field Office. </li>
+						<li>The UAN Card is dynamic and shall get updated automatically. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q29" class="collapsed" aria-expanded="false">What time EPF will take to change for correction in personal particulars? </a>
+						</h4>
+					</div>
+					<div id="Q29" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>After receiving duly completed information from Employer at concerned Field Office, changes will get uploaded within 1 months. Note: Changes in details of memberâ€™s particulars will be as per norms of EPF. </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q30" class="collapsed" aria-expanded="false">Two UAN allotted to me by EPFO? </a>
+						</h4>
+					</div>
+					<div id="Q30" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>In case two UAN are allotted to you, this could be because of not filing of Date of Exit by your previous employer in ECR filing and/or you have applied for transfer of service in your current establishment.</li>
+						<li>Now EPFO has passed a circular in December 2017 to merge Multiple UAN in Single UAN. You can merge 10 UAN by logging your UAN Passbook.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q31" class="collapsed" aria-expanded="false">Why I am not able to link/list previous Member IDs pertaining to me? </a>
+						</h4>
+					</div>
+					<div id="Q31" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>As the details are matched with previous Member ID w.r.t. current Member ID and if there is any deviation in Name etc. it will not allow for link/list Member ID. In case of change of Name and other personal particular you need to contact your employer as per the procedure. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q32" class="collapsed" aria-expanded="false">Whether the member can correct his Date of Birth or to furnish the missing information of previous employment particulars through the present employer. </a>
+						</h4>
+					</div>
+					<div id="Q32" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, Now EPFO has launched a new Link in UAN Passbook where you can put your request to modify any kind of details you want. Then Employer will approve it, after that EPFO will approve this.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q33" class="collapsed" aria-expanded="false">Why are the KYC details re-confirmed by the present employer when the process of resubmission of KYC details is already available to the member himself directly? </a>
+						</h4>
+					</div>
+					<div id="Q33" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The re-confirmation of the KYC details by the present employer leads to generation of auto transfer claim.  </li>
+							<li>As the process of transfer of accounts initiated thereafter has financial implications, it is necessary that the credentials of member are verified by the present employer viz.-a-viz. the information furnished by the previous employer. </li>
+						<li>The KYC details of members helps in the authentication of the member by both the employers. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q34" class="collapsed" aria-expanded="false">Why is it that the member activation is necessary for completing the process of auto transfer? </a>
+						</h4>
+					</div>
+					<div id="Q34" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The idea behind linking activation to EPFO services was to ensure that the members get updated status of any transactions taking place in their PF accounts on the mobile no. registered through activation. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q35" class="collapsed" aria-expanded="false">How can I seek the help for any queries related to this portal? </a>
+						</h4>
+					</div>
+					<div id="Q35" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>For queries related to the UAN Member Portal, you may contact: </p>
+							<ol><li>UAN Helpdesk Number : 18001-18005 </li>
+							<li>UAN Helpdesk Email Id : uanepf@epfindia.gov.in</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q36" class="collapsed" aria-expanded="false">Is contribution to the EPF mandatory? </a>
+						</h4>
+					</div>
+					<div id="Q36" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>For those who have a basic salary of up to INR 15000, contributing to the EPF is mandatory. Contributions are voluntary for those whose basic salary exceeds INR 15000.</li>
+							<li>However it is strongly recommended to make such contributions to avail of the various benefits an EPF Account has in store. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q37" class="collapsed" aria-expanded="false">What should I do when I change my job? And what should be done when I quit my job (without joining elsewhere)? </a>
+						</h4>
+					</div>
+					<div id="Q37" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>At such times, the PF balance could be transferred from one employer to another. </li>
+								<li>The existing balance would continue to stay, with fresh contributions made by the new employer. </li>
+							<li>When you quit your job, PF could be withdrawn. You need to provide a declaration that you do not intend to work for the next six months. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q38" class="collapsed" aria-expanded="false">EPF vs. PPF â€“ Which is better?  </a>
+						</h4>
+					</div>
+					<div id="Q38" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employee Provident Fund (EPF) and Public Provident Fund (PPF) are long term investment instruments for retirement. However a lot of people are confused between these two. We clarify all your doubts.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q39" class="collapsed" aria-expanded="false">Change in Employee Provident Fund Rules â€“ Things you need to know  </a>
+						</h4>
+					</div>
+					<div id="Q39" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>As per the new 2012 rules issued recently, The EPFO has made amendments to the way in which employee and employer contribution would be calculated hereon. For employees, this amendment is particularly important as it impacts his/her take home salary and income tax liability as well.  </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q40" class="collapsed" aria-expanded="false">Where does my monthly EPF contribution go to and what is the break-up of the contribution to the above schemes?</a>
+						</h4>
+					</div>
+					<div id="Q40" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>For queries related to the UAN Member Portal, you may contact: </p>
+							<ol><li>UAN Helpdesk Number : 18001-18005 </li>
+							<li>UAN Helpdesk Email Id : uanepf@epfindia.gov.in</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q41" class="collapsed" aria-expanded="false">How can I seek the help for any queries related to this portal? </a>
+						</h4>
+					</div>
+					<div id="Q41" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>An employeeâ€™s monthly contribution would go into the following 3 schemes as per EPF, 1952, EDLIS (Employeesâ€™ Deposit Linked Insurance Scheme), 1976 &amp;  EPS (Employeesâ€™ Pension Scheme), 1995, Most companies calculate â€˜salaryâ€™ as: Basic + DA. Some calculate: Basic + DA + Allowances that are ordinarily necessarily and uniformly paid to employees. The EPFO has made recent amendments to the way in which employee and employer contribution would be calculated hereon. For employees, this amendment is particularly important as it impacts his/her take home salary and income tax liability as well. Employees drawing Basic of more than INR 15000 per month: Assume Employeeâ€™s basic at INR 8,000 per month. Employer can calculate his contribution in 3 ways as below:</li>
+							</ol>
+							<table class="table table-bordered"><tbody>
+								<tr><td rowspan="2">
+									<p><strong>Method</strong></p>
+									</td><td rowspan="2">
+									<p><strong>â€˜Employeeâ€™ Contribution</strong></p>
+								</td>
+								<td colspan="2">
+									<p><strong>â€˜Employerâ€™ Contribution</strong></p>
+								</td></tr>
+								<tr>
+									<td><p><strong>EPF</strong></p></td>
+									<td><p><strong>EPS</strong></p></td>
+								</tr>
+								<tr>
+									<td><p>Method-1</p></td>
+									<td><p>12% of INR 8,000</p></td>
+									<td><p>12% of INR 8,000 â€˜minusâ€™ EPS amount</p></td>
+									<td><p>8.33% of INR 8000</p></td>
+								</tr>
+								<tr>
+									<td><p>Method-2</p></td>
+									<td><p>12% of INR 8000</p></td>
+									<td><p>3.67% of INR 8000</p></td>
+									<td><p>8.33% of INR 8000</p></td>
+								</tr>
+								<tr>
+									<td><p>Method-3</p></td>
+									<td><p>12% of INR 8,000</p></td>
+									<td><p>3.67% of INR 8000</p></td>
+									<td><p>8.33% of INR 8000</p></td>
+								</tr>
+							</tbody>
+							</table>
+							<p>Method varies from company to company. Do check with your employer on what method they have employed.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q42" class="collapsed" aria-expanded="false">What is the current interest rate on EPF Account?  </a>
+						</h4>
+					</div>
+					<div id="Q42" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>EPF interest rate is 8.5% p.a.* (It changes yearly please check the EPFO circulars) </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q43" class="collapsed" aria-expanded="false">How do I check my EPF Account statement online? </a>
+						</h4>
+					</div>
+					<div id="Q43" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Employee can check their EPF Account statement by Activating &amp; Logging in their UAN Passbook. The link is as follows: </p>
+							<ol><li><a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" alt="Unified Portal link">https://unifiedportal-mem.epfindia.gov.in/memberinterface/</a>no-auth/uanActivation/activationForm?_HDIV_STATE_=4-7-833FBB953036F2FA41F6886B58180468</li>
+								<li>https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp</li>
+							<li>You can download the App â€“ UMANG on your mobile to see your total contributions</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q44" class="collapsed" aria-expanded="false">When can I withdraw my EPF money? </a>
+						</h4>
+					</div>
+					<div id="Q44" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>You can withdraw from your EPF account on the account your childrenâ€™s education, marriage of self, children and siblings, purchase/construction of a house or any medical emergencies.  </li>
+								<li>However, withdrawal is subject to certain conditions, non-compliance of which would result in penal interest: </li>
+								<li>You should have completed minimum 7 years of service; </li>
+								<li>Withdrawal can be made only 3 times in the period during which you hold the EPF Account; </li>
+								<li>Maximum aggregate withdrawal would be 50% of the total contributions made by you. </li>
+								<li>For medical emergencies, there is no minimum service period. However, the maximum amount one can withdraw is 6 times the basic salary and proof of hospitalization is required. </li>
+								<li>Withdrawal from EPF Account for purchase/construction of a house is available only once in an individualâ€™s entire working life. </li>
+							<li>The minimum service period is 5 years and the maximum withdrawable amount is 36 times your total salary (for construction of property) and 24 times (for purchase of property).</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q45" class="collapsed" aria-expanded="false">Can I make EPF contributions more than 12% of my salary?  </a>
+						</h4>
+					</div>
+					<div id="Q45" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Yes, you can. The additional contribution is called as â€˜voluntary contributionâ€™. </li>
+								<li>But such additional contribution will not be matched by your employer. </li>
+							<li>All the same rules and interest rate will apply to your voluntary contribution regarding withdrawal, transfer, interest rate and so forth.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q46" class="collapsed" aria-expanded="false">How to locate an EPFO Office in case of any grievances?</a>
+						</h4>
+					</div>
+					<div id="Q46" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>No need to locate any EPF Office, now you can go online &amp; put your grievance there. The website is as under :   </p>
+							<ol><li>http://epfigms.gov.in/</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q47" class="collapsed" aria-expanded="false">What is the Contribution for Provident Fund both by the Employer &amp; Employee? </a>
+						</h4>
+					</div>
+					<div id="Q47" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The Employee contributes 12% of his /her Basic Salary &amp; the same amount is contributed by the Employer &amp; rest 1.15% will be paid as Administrative charges to EPFO by Employer</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q48" class="collapsed" aria-expanded="false">Is it Compulsory for the all the employees to contribute to the Provident Fund? </a>
+						</h4>
+					</div>
+					<div id="Q48" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employees drawing basic salary upto Rs 15000/- (from 01.09.2014) have to compulsory contribute to the Provident fund and employees drawing above Rs 15000/- (from 01.09.2014)) have an option to become member of the Provident Fund </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q49" class="collapsed" aria-expanded="false">Is it beneficial for employees who draw salary above Rs 15001/- to become member of Provident Fund?</a>
+						</h4>
+					</div>
+					<div id="Q49" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Yes because provident fund contribution by the employer &amp; employee is not a taxable income for Income Tax purpose &amp; provides social securityâ€™s as specified by EPF Act. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q50" class="collapsed" aria-expanded="false">What if an employee while joining establishment has a basic salary of Rs 11200 and after some period of time his basic salary increases above Rs. 15001/-, does he have an option to terminate his member ship form the Provident fund act?</a>
+						</h4>
+					</div>
+					<div id="Q50" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employee who while joining the organization has a basic salary above Rs 15001/- have an option to either become or avoid becoming member of Provident fund but employees whose basic salary while joining the organisation is less then Rs 15001/- but after some period of time their basic increases above Rs 15001/- have to compulsorily continue to be member of provident Fund.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q51" class="collapsed" aria-expanded="false">What is the contribution percentage to the Provident fund and Pension Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q51" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employers contribution of 12% of basic salary is totally deposited in provident fund account </li>
+							<li>Whereas out of Employees contribution of 12%, 3.67% is contributed to Provident fund and 8.33% is deposited in Pension scheme.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q52" class="collapsed" aria-expanded="false">Which form has to be filled while becoming member of provident fund?</a>
+						</h4>
+					</div>
+					<div id="Q52" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Nomination Form No 2 has to be filled to become a member of the Provident fund, form is available with HR department.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q53" class="collapsed" aria-expanded="false">Which form has to be filled while transferring provident fund deposit?</a>
+						</h4>
+					</div>
+					<div id="Q53" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>You just have to fill form no 13 to transfer your P.F amount in hard copy shape otherwise you can submit your request to transfer online using your UAN</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q54" class="collapsed" aria-expanded="false">What is the provision of the scheme in the matter of nomination by a member?</a>
+						</h4>
+					</div>
+					<div id="Q54" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Each member has to make a nomination to receive the amount standing to his credit in the fund in the event of his death.</li>
+								<li>If he has a family, he has to nominate one or more person belonging to his family and none other. </li>
+								<li>If he has no family he can nominate any person or persons of his choice but if he subsequently acquires family, such nomination becomes invalid and he will have to make a fresh nomination of one or more persons belonging to his family.</li>
+							<li>You cannot make your brother your nominee as per the Acts.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q55" class="collapsed" aria-expanded="false">When is an employee eligible to enjoy pension scheme?</a>
+						</h4>
+					</div>
+					<div id="Q55" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>For an employee to become eligible for Pension fund, he has to complete membership of the Fund for 10 Years.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q56" class="collapsed" aria-expanded="false">What does it mean by continuous service of ten years ?</a>
+						</h4>
+					</div>
+					<div id="Q56" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>When we say continuous service of 10 years in Employee Pension Fund, we mean to say that during services, for e.g., an employee who has worked with X company for say 3 years, then he resigned from that organisation and joined Y company, wherein he worked for 2 years, then resigned from there to join establishment for 5 years but during these 10 years of service he has not withdrawn but transferred his Employee pension fund, then we say continuous service of ten years.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q57" class="collapsed" aria-expanded="false">When can an employee avail the benefit of Employee pension fund scheme which he has contributed during his ten years of continues service /</a>
+						</h4>
+					</div>
+					<div id="Q57" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>An employee can avail the benefit after completion of 58 years of service.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q58" class="collapsed" aria-expanded="false">What happens to the provident fund &amp; Employee Pension fund if an employee who wants to resign from the service before completion of ten years of continues service?</a>
+						</h4>
+					</div>
+					<div id="Q58" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employee can withdraw the PF accumulations by filling Forms 19 &amp; 10 C which is available with the HR department of the Establishment.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q59" class="collapsed" aria-expanded="false">What is this 19 &amp; 10C form?</a>
+						</h4>
+					</div>
+					<div id="Q59" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Form No 19 is for Provident fund withdrawal &amp; Form No. 10 C is for Pension scheme withdrawal. </li>
+							<li>Nowadays, this facilities available online,</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q60" class="collapsed" aria-expanded="false">Do we get any interest on the amount which is deposited in the Provident Fund account?</a>
+						</h4>
+					</div>
+					<div id="Q60" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Compound interest as declared by the Govt. is given for every year of service.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q61" class="collapsed" aria-expanded="false">What is the accounting year for Provident fund account?</a>
+						</h4>
+					</div>
+					<div id="Q61" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Accounting year is from March to February.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q62" class="collapsed" aria-expanded="false">What are the benefits provided under Employee Provident Fund Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q62" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Two kinds of benefits are provided under the scheme-
+								<ul><li>Withdrawal benefit</li>
+									<li>Benefit of non -Refundable advances</li>
+								</ul>
+							</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q63" class="collapsed" aria-expanded="false">What is the purpose of the Employeeâ€™s Pension Scheme? </a>
+						</h4>
+					</div>
+					<div id="Q63" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The purpose of the scheme is to provide for</p>
+							<ol><li>Superannuation pension.</li>
+								<li>Retiring Pension</li>
+								<li>Permanent Total disablement Pension</li>
+								<li>Superannuation Pension: Member who has rendered eligible service of 20 years and retires on attaining the age of 58 years.</li>
+								<li>Retirement Pension: member who has rendered eligible service of 20 years and retires or otherwise ceases to be in employment before attaining the age of 58 years.</li>
+							<li>Short service Pension: Member has to render eligible service of 10 years and more but less than 20 years.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q64" class="collapsed" aria-expanded="false">How much time does it take to receive P.F &amp; pension money if an employee resigns from the Service? </a>
+						</h4>
+					</div>
+					<div id="Q64" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>Normally the procedure for receiving P.F &amp; Pension money is:</p>
+							<ol><li>the employee has to fill 19 &amp; 10 c Form and submit the same to PF Desk, which is then submitted to the P.F office after two months, this two months is nothing but a waiting period as the rules are that an employee should not be in employment for two months after resigning if he has to withdraw his P.F amount or Nowadays you can apply online.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q65" class="collapsed" aria-expanded="false">Do we receive money through postal order?</a>
+						</h4>
+					</div>
+					<div id="Q65" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Previously there was a procedure wherein member use to get P.F through Postal order but now While submitting the P.F form withdrawal form you have to mention your saving Bank account No. &amp; the complete address of the Bank where you hold the account.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q66" class="collapsed" aria-expanded="false">How would I know the amount of accumulations in my PF account?</a>
+						</h4>
+					</div>
+					<div id="Q66" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>PF office sends an annual statement through the employer which gives details about the PF accumulations. </li>
+								<li>The statement contains details like, Opening balance, amount contributed during the year, withdrawal during the year, interest earned and the closing balance in the PF account. </li>
+								<li>This statement is sent by the PF department on completion of the financial year.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<h2 class="faqs">For Employees</h2>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q67" aria-expanded="false" class="collapsed">Can I opt out of EPF scheme?</a>
+						</h4>
+					</div>
+					<div id="Q67" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+						<div class="panel-body"><ol><li>Yes, you can opt out of EPF scheme if your monthly salary (basic+DA) is more than 15,000 by giving declaration on Form -11, </li>
+							<li>but you have to decide it before becoming the member of EPF. Once you become a PF member, you canâ€™t leave it till you are in the job.</li>
+						</ol> 
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q68" class="collapsed" aria-expanded="false">I am not the member of EPF, can I join later?</a>
+						</h4>
+					</div>
+					<div id="Q68" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes you can join EPF any time before the retirement. There is no such restriction.</li>
+						</ol></div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q69" class="collapsed" aria-expanded="false">My company is very small; it is not part of EPF act. Can I individually become the member of EPF?</a>
+						</h4>
+					</div>
+					<div id="Q69" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>It is not possible without the employer.</li>
+							<li>The contribution towards employer is the must for EPF.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q70" class="collapsed" aria-expanded="false">Do I need to become the member of PF, whenever I join a new company?</a>
+						</h4>
+					</div>
+					<div id="Q70" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No, Every new employee gets the Universal Account Number. This number is portable and works with any job. </li>
+								<li>You can quote the existing UAN to the new employer. It will make your PF membership portable. </li>
+								<li>The PF balance from the previous company also gets transferred through the UAN.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q71" class="collapsed" aria-expanded="false">Is universal account number necessary for becoming the member of EPF? How can we get it?</a>
+						</h4>
+					</div>
+					<div id="Q71" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Today, EPFO asks UAN for every interaction with it. </li>
+							<li>EPF membership, transfer, withdrawal and even complaint canâ€™t be lodged without the UAN.</li>
+							<li>Normally, the EPFO issues UAN for all of the active members. </li>
+							<li>The employers have to distribute this number to its employees. </li>
+							<li>But, an employee can also check its UAN status through the UAN portal. It requires the PF member ID to reveal the UAN.</li>
+							<li>Besides this one can get UAN even before getting the job. This UAN can be mentioned at the time of joining a job.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q72" class="collapsed" aria-expanded="false">Why should I join the EPF, why not put our retirement saving in other pension schemes?</a>
+						</h4>
+					</div>
+					<div id="Q72" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The EPF is constituted mainly for the low income worker. </li>
+								<li>This class of worker is not very aware about the retirement saving. </li>
+								<li>This forced saving builds a decent retirement corpus. </li>
+								<li>Therefore, people who earns more than Rs 15000/month are free to opt out of EPF.</li>
+								<li>However, the terms and condition of EPF make it restricted saving. </li>
+								<li>Because of the restriction, this saving lasts till the retirement. </li>
+								<li>Whereas, other saving can be spent before the retirement. Also, the EPF investment is very secure and cheap saving plan.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q73" class="collapsed" aria-expanded="false">How many years service is required to be eligible to receive member pension?</a>
+						</h4>
+					</div>
+					<div id="Q73" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Minimum 10 years eligible service will entitle for member pension</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q251" class="collapsed" aria-expanded="false">Does pension amount also transfers along with the EPF:</a>
+						</h4>
+					</div>
+					<div id="Q251" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes. It gets transferred automatically along with the EPF.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q74" class="collapsed" aria-expanded="false">Can a member increase his EPF contribution?</a>
+						</h4>
+					</div>
+					<div id="Q74" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, an EPF member can increase his EPF contribution up to the 100% of the salary. </li>
+							<li>But an employer is not bound to match the amount beyond 12%. Also, if an employer increases its contribution beyond 12%, the additional amount would be taxable.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q75" class="collapsed" aria-expanded="false">My employer is not approving the EPF withdrawal form? How can I get the PF balance?</a>
+						</h4>
+					</div>
+					<div id="Q75" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>If an employer is not signing the EPF withdrawal application. You have two ways to proceed.</p>
+							<ol><li>Use the new form of EPF withdrawal and submit it directly to the regional EPF office. For this method, you should have activated UAN and approved KYC.</li>
+								<li>Fill the EPF withdrawal form yourself and get it attested from the gazetted office or bank manager.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q76" class="collapsed" aria-expanded="false">Who will be covered by the Pension Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q76" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Every member of the ceased Family Pension Scheme 1971 and anyone who joins any covered establishment on or after 16-11-95 is compulsorily to join this scheme, provided his/her salary/wage is less than Rs. 15001/- per month at the date of appointment. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q77" class="collapsed" aria-expanded="false">What is a covered establishment?</a>
+						</h4>
+					</div>
+					<div id="Q77" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Covered establishment is an establishment belonging to the class of industries / other establishments, which has been listed in the schedule appended to the Employees' Provident Fund and Miscellaneous Provisions Act 1952 and where 20 or more persons are employed. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q78" class="collapsed" aria-expanded="false">Is employee the only beneficiary of Fund?</a>
+						</h4>
+					</div>
+					<div id="Q78" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Benefit will be paid to him/her and in his/her absence to his/her family. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q79" class="collapsed" aria-expanded="false">What is meant by Family?</a>
+						</h4>
+					</div>
+					<div id="Q79" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">  
+							<ol>
+								<li>Family means employees' spouse and children below 25 years of age. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q80" class="collapsed" aria-expanded="false">Suppose an employee does not have a Family and he/she dies before receiving benefit. Does his/her pension get lost?</a>
+						</h4>
+					</div>
+					<div id="Q80" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No, if he/she does not have a family, benefits will be paid to his/her nominee, who will receive the benefit in his/her absence</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q81" class="collapsed" aria-expanded="false">Suppose member has not nominated anyone. </a>
+						</h4>
+					</div>
+					<div id="Q81" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The pension / ROC will be paid to the dependent parents. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q82" class="collapsed" aria-expanded="false">Can member change his/her nomination?</a>
+						</h4>
+					</div>
+					<div id="Q82" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>He/She can change his/her nomination whenever he/she decides within the framework of rules for such nomination. </li>
+							<li>In other words if he/she has a family, nomination should be in favour of a member(s) of the family.</li>
+							<li>If he/she has no family he/she can nominate anyone he/she wishes</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q83" class="collapsed" aria-expanded="false">How many years service is required to be eligible to receive member pension? </a>
+						</h4>
+					</div>
+					<div id="Q83" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Minimum 10 years eligible service will entitle for member pension.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q84" class="collapsed" aria-expanded="false">Employee is a member of Employees' Pension Scheme. He/She has left employment at 48 yrs. of age and 8 yrs. of service. When shall he/she receive his/her pension?</a>
+						</h4>
+					</div>
+					<div id="Q84" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>He/She can take either withdrawal benefit or can take scheme certificate so that the 8 years service can be added to any future service that he / she may put in, in any other covered establishment. </li>
+							<li>By virtue of being a holder of a scheme certificate, if the member dies before 58 years widow / widower and children shall be entitled for pension. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q85" class="collapsed" aria-expanded="false">What is past service pension?</a>
+						</h4>
+					</div>
+					<div id="Q85" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>If any person-</p>
+							<ol><li>This pension is for the period of membership of the Employees' Family Pension Scheme, 1971. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q86" class="collapsed" aria-expanded="false">When does an employee become eligible to become a member of Employees' Provident Fund Scheme, 1952 and Employees' Deposit Linked Insurance Scheme, 1976? </a>
+						</h4>
+					</div>
+					<div id="Q86" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>An employee becomes a member of Employees Provident Fund (Employees' Provident Fund) Scheme, 1952 / Employees Deposit Linked Insurance (Employees' Deposit Linked Insurance) Scheme, 1976 immediately on joining an establishment covered under the Employees Provident Funds &amp; Miscellaneous Provision Act, 1952. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q87" class="collapsed" aria-expanded="false">What is nomination? </a>
+						</h4>
+					</div>
+					<div id="Q87" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Every member has to give the details of himself &amp; details of the nominee for Employees' Provident Fund &amp; Employees' Deposit Linked Insurance Schemes </li>
+								<li>And details of family for Employees Pension Scheme, 1995 in form no. 2.  </li>
+								<li>A member if, is having a family can nominate any one or more persons to receive the Provident Fund on his death. </li>
+								<li>In case of him having no family he can nominate any other person.</li>
+								<li>Family for the purpose of Employee Provident Fund Scheme'52 means wife/husband, children, whether married or unmarried, including adopted children, if adoption is recognized and dependant parents of member.</li>
+								<li>Employees Deposit Linked Insurance Scheme benefit will be paid to the nominee under Employees Provident Fund Scheme, 1952.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q88" class="collapsed" aria-expanded="false">Specimen signature:</a>
+						</h4>
+					</div>
+					<div id="Q88" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Specimen signature of the officer/officers who are authorized to sign the returns/documents relating to Provident Fund forwarded immediately after coverage &amp; whenever there is a change in authorized officer </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q89" class="collapsed" aria-expanded="false">What is the procedure to be followed by the member if the employer is not attesting his claim forms? </a>
+						</h4>
+					</div>
+					<div id="Q89" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>It is the duty of the employer under the Act &amp; Scheme to help Employees' Provident Fund organization to settle the Provident Fund dues of his employees. </li>
+								<li>He has to complete the prescribed application within 5 days of receipt forms &amp; hand over it to the member when he leaves the service. </li>
+								<li>When a member finds difficult to get the form attested by the employer, he can get the attestation of any of the following officer &amp; send to the Provident Fund office:
+									<ul><li>Manager of a bank. </li>
+										<li>By any gazetted officer.  </li>
+										<li>Member of the Central Board of Trustees./ committee/ Regional Committee (Employees' Provident Fund Organization).</li>
+									<li>Magistrate/ Post/ Sub Post Master/ President of Village Panchayat/ Notary Public.</li></ul>
+								</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q90" class="collapsed" aria-expanded="false">What is the mode of payment of Provident Fund and Employees' Deposit Linked Insurance dues?</a>
+						</h4>
+					</div>
+					<div id="Q90" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Provident Fund &amp; Employees' Deposit Linked Insurance dues is paid by money order/ by deposit in payees' bank a/c/ through employer/ by depositing the cheque in payees' name or part of amount in annuity scheme in any nationalized bank. </li>
+								<li>Payment by money order is allowed where the amount is not more than Rs. 2000/-.  </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q91" class="collapsed" aria-expanded="false">What are the modalities to be followed for payment through cheque? </a>
+						</h4>
+					</div>
+					<div id="Q91" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The member has to open an account in the nationalized bank, scheduled bank, urban bank or post office savings bank. He has to furnish the details of bank a/c no. with the full address of the bank in application form. An advance stamped receipt has also to be annexed in the form.</li>
+								<li>For receipt of pension member/claimant has to open an account only in State Bank of India or Punjab National Bank. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q92" class="collapsed" aria-expanded="false">In case of returning of cheque what is the procedure to be followed?</a>
+						</h4>
+					</div>
+					<div id="Q92" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Generally the cheques are returned by the bankers when the a/c number is furnished incorrect or a/c has been closed. </li>
+								<li>On receipt of the cheque from the bankers the Provident Fund office will write to the member &amp; employer about the fact &amp; request them to intimate the bank, a/c number &amp; detailed address. </li>
+								<li>In case, the member comes to know about returning of the cheque before this, he can write to the Provident Fund office through his former employer regarding his present address &amp; bank a/c number. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q93" class="collapsed" aria-expanded="false">What is the time taken for disposal of the application in the Provident Fund office?</a>
+						</h4>
+					</div>
+					<div id="Q93" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The claims received complete in all respects are disposed off within a maximum period of 30 days from the date of receipt of claims in the office. </li>
+								<li>In case the member is not hearing anything about his application within 30 days, he can approach the Public Relation Officer. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q94" class="collapsed" aria-expanded="false">What is the voluntary rate of Provident Fund contribution by the member? </a>
+						</h4>
+					</div>
+					<div id="Q94" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>As per the Act, the member has to contribute at the rate of 10% or 12% of his basic pay, D.A. &amp; retaining allowance if any. </li>
+							<li>In case the member wants to contribute more than this, voluntarily he can do so at any rate he desires. i.e. upto 100% of basic and D.A. </li>
+							<li>But the employer is not bound to contribute at the enhanced rate. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q95" class="collapsed" aria-expanded="false">Can member not get pension earlier? </a>
+						</h4>
+					</div>
+					<div id="Q95" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Yes, he/she may receive pension on reaching age of 50 years. In that case pension payable from age of 50 years will be reduced by 3% for each year falling short of 58.</li>
+							<li>Member's pension has been worked out based on salary at age 48 and service upto 48.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q96" class="collapsed" aria-expanded="false">Will this pension remain same until he/she reach age 58?</a>
+						</h4>
+					</div>
+					<div id="Q96" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>No, the pension will be increased on subsequent actuarial valuation along with vested percentage.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q97" class="collapsed" aria-expanded="false">If employee has reached age of 50 years, what does he/she has to do to receive monthly pension?</a>
+						</h4>
+					</div>
+					<div id="Q97" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>As and when he / she is quitting the employment, they can apply for reduced monthly pension. </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q98" class="collapsed" aria-expanded="false">Employee is a member of ESIC. On his disablement he will receive benefit from there as well. Will his benefit under Employees' Pension Scheme be affected by this?</a>
+						</h4>
+					</div>
+					<div id="Q98" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No, his benefit under the scheme is due to his contribution under The Employees' Pension Scheme '95. Accordingly the disablement pension will not be affected notwithstanding his availing benefit elsewhere.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q99" class="collapsed" aria-expanded="false">Employee has left his employment on reaching age 45. He has deferred his pension till 58. He has become permanently disabled after 3 years from leaving service. Does he receive disablement pension? </a>
+						</h4>
+					</div>
+					<div id="Q99" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No, he will receive disablement pension from date of disablement only if such disablement occurs while in service.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q100" class="collapsed" aria-expanded="false">In case of employee's death in service, what benefit will be available to his family?</a>
+						</h4>
+					</div>
+					<div id="Q100" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Widow/Children will receive pension</li>
+								<li>The pension as he would have received had he retired on the day of death or (b) Such widow pension would have been payable under erstwhile Family Pension Scheme </li>
+								<li>EDLI Amount they will receive while he dies in service</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<h2 class="faqs">PURPOSES &amp; BENEFITS OF EPF</h2>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q101" aria-expanded="false" class="collapsed">What is the purpose of the Employees' Provident Funds Scheme, 1952, and to whom is it applicable?</a>
+						</h4>
+					</div>
+					<div id="Q101" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+						<div class="panel-body"><ol><li>The purpose of the scheme is to establish provident funds for the employees covered by the Employees' Provident Funds Act, 1952. </li>
+							<li>As such, the scheme is applicable to the employees of all factories and other establishments covered by the said Act except those exempted under section 17 thereof. {Section 5 &amp; Para 1}</li>
+						</ol> 
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q102" class="collapsed" aria-expanded="false">Who is eligible to become a member of the Fund?</a>
+						</h4>
+					</div>
+					<div id="Q102" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Every employee employed in or in connection with the work of a factory or other establishment covered by the scheme other than an excluded employee is entitled and required to become a member of the Fund from the date of joining the factory or establishment</li>
+							<li>An excluded employee shall, on ceasing to be such an employee, be entitled and required to become a member of the Fund from the date he ceased to be such employee. {Para 26}</li>
+						</ol></div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q103" class="collapsed" aria-expanded="false">Are the persons employed by or through a contractor covered under the Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q103" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The persons employed by or through a contractor are included in the definition of "employee" under the Employees' Provident Funds Act, 1952, and as such, they are covered under the Scheme. {Para 30}.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q104" class="collapsed" aria-expanded="false">What is meant by "excluded employee"?</a>
+						</h4>
+					</div>
+					<div id="Q104" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>"Excluded employee" means- an employee who, having been a member of the Fund, has withdrawn the full amount of his contribution in the Fund</p>
+							<ol><li>on retirement from service after attaining the age of 55 years of</li>
+								<li>before migration from India for permanent settlement abroad; or for taking employment abroad; </li>
+								<li>an employee whose pay at the time he is otherwise entitled to become a member of the Fund, exceeds Rs. 15000 per month; a person who, according to the Certified Standing Orders, is an apprentice, or who is declared to be an apprentice by the authority specified in this behalf by the appropriate Government. {Para 2(f)}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q105" class="collapsed" aria-expanded="false">What is the contribution payable by the employer and the employee under the Scheme? </a>
+						</h4>
+					</div>
+					<div id="Q105" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The contribution payable by the employer under the Scheme is 12 percent of the wages of an employee. The contribution payable by the employee under the Scheme is equal to the contribution payable by the employer in respect of such employee. {Section 6 &amp; Para 29}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q106" class="collapsed" aria-expanded="false">Have the employee and the employer to pay contribution on the entire pay of the employee?</a>
+						</h4>
+					</div>
+					<div id="Q106" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Where the monthly pay of an employee exceeds 15000 rupees the contribution payable by him, and in respect of him by the employer, shall be limited to the amounts payable on a monthly pay of 15000 rupees. {Para 26-A }</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q107" class="collapsed" aria-expanded="false">Is it necessary to deduct provident fund contribution from arrears of wages paid to an employee as a result of an award revising his scale of pay?</a>
+						</h4>
+					</div>
+					<div id="Q107" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Arrears are emoluments earned by the employee while on duty and provident fund contributions have to be deducted from such wages.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q108" class="collapsed" aria-expanded="false">Is it permissible for any member to contribute at a rate higher than the rate or 12 percent?</a>
+						</h4>
+					</div>
+					<div id="Q108" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>A member, if he so desires, may contribute an amount exceeding 12 percent as the case may be but the employer shall not be under an obligation to pay contribution over and above his contribution payable under the Act. {Para 29} </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q109" class="collapsed" aria-expanded="false">Is any interest payable on the Provident Fund accumulations of a member?</a>
+						</h4>
+					</div>
+					<div id="Q109" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Compound interest, at a rate determined by the Central Government from time to time, is paid on the amount standing to the credit of a member as on 1st day of April every year. {Para 60}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q110" class="collapsed" aria-expanded="false">Is the employer required to pay administrative charges under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q110" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The employer is required to pay administrative charges at the rate of 1.10 percent of the pay payable to the employees in respect of which provident fund contributions are payable. {Para 38 &amp; 39}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q111" class="collapsed" aria-expanded="false">What is the provision of the Scheme in the matter of transfer of members?</a>
+						</h4>
+					</div>
+					<div id="Q111" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>if a member of the Fund goes from one establishment to another or from one region to another, the balance of his Provident Fund is transferred form the old account to a new account in the new establishment while transferring UAN. {Section 17 &amp; Para 57}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q112" class="collapsed" aria-expanded="false">If an employee has a "family", can he make nomination in favour of brother?</a>
+						</h4>
+					</div>
+					<div id="Q112" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>No nomination can be made under the E. F. P. Scheme in favour of a person who is not a member of the "family". </li>
+						<li>The word "family" is defined in Para 2(g) of the Scheme and according to the definition brother is not a member of the "family". The nomination made in favour of brother is invalid.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q113" class="collapsed" aria-expanded="false">What is the provision of the Scheme in the matter of nomination by a member?</a>
+						</h4>
+					</div>
+					<div id="Q113" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>-	Each member has to make a nomination to receive the amount standing to his credit in the Fund in the event of his death.</li>
+							<li>If he has a family, he has to nominate one or more persons belonging to his family and none other. </li>
+							<li>If he has no family he can nominate any person or persons of his choice but if he subsequently acquires a family, such nomination becomes invalid and he will have to make a fresh nomination of one of more persons belonging to his family. </li>
+							<li>A nomination can be modified by the member at any time. {Para 61}</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<h2 class="faqs">What are the benefits provided under the Scheme?</h2>
+				<p>The following three kinds of benefits are provided under the scheme:</p>
+				
+				
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q114" class="collapsed" aria-expanded="false">Withdrawal Benefit</a>
+						</h4>
+					</div>
+					<div id="Q114" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">  
+							<ol>
+								<li>A member can withdraw the full amount standing to his credit in the Fund in the following circumstances immediately Retirement after attaining the age of 55 years, retirement due to incapacity for work, migration for permanent settlement abroad, mass retrenchment, voluntary retirement, closer of establishment, transfer to an establishment not covered under the Act, discharge with payment of retrenchment compensation, etc {Para 69} </li>
+								<li>In all the order cases of leaving services he can withdraw the full amount if he remains unemployed after the waiting period of two months unemployment.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q115" class="collapsed" aria-expanded="false">Benefit of Non-refundable Advances: </a>
+						</h4>
+					</div>
+					<div id="Q115" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Non-refundable advances from the amount standing to the credit of a member in the Fund can be sanctioned for the following purposes:</p>
+							<ol><li>purchase of a house, {Para 68B}</li>
+								<li>repayment of a loan, for housing, {Para 68BB}</li>
+								<li>unemployment due to lock-out or temporary closure, {Para 68H}</li>
+								<li>unemployment due to illness, {Para 68J}</li>
+								<li>marriage of a self of of daughter, son, sister or brother, {Para 68K}</li>
+								<li>education of son or daughter, {Para 68K}</li>
+								<li>exceptional calamity, etc. {Para 68L}</li>
+								<li>withdrawal for investment in Varishta Pension Bima Yojana. {Para 68NNN}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q116" class="collapsed" aria-expanded="false">Benefit of financing of Life Insurance Policies: </a>
+						</h4>
+					</div>
+					<div id="Q116" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>This benefit can be available as specified in Paragraphs 62 to 67. {Para 62 to 67}</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q117" class="collapsed" aria-expanded="false">Is there any limit prescribed for getting the benefits?</a>
+						</h4>
+					</div>
+					<div id="Q117" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The scheme provides for payment of benefit by the Commissioner within 30 days from the date of receipt of claim application {Para 72(7)}.</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q118" class="collapsed" aria-expanded="false">Who is entitled to receive the accumulations in the Provident Fund account of a deceased member?</a>
+						</h4>
+					</div>
+					<div id="Q118" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>On the death of a member the amount standing to his credit in the Fund is payable to his nominee or nominees. If there is no nominee, such amount is payable to his family members in the manner specified in Paragraph 70 of the Scheme or in their absence to the legal heir. {Para 70}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q119" class="collapsed" aria-expanded="false">How does a member know the position of his Provident Fund account?</a>
+						</h4>
+					</div>
+					<div id="Q119" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Every year the Commissioner for Employees' Provident Fund sends to each member, through the employer, a statement of his account in the Fund showing the opening balance, the amount contributed during the year, withdrawal during the year, the amount of interest and the closing balance.</li>
+							<li>If the member finds any error in the statement, he has to bring it to the notice of the Commissioner within 6 months from the receipt of the statement. {Para 73}</li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q120" class="collapsed" aria-expanded="false">What are the offences under the Scheme and what is the punishment for them?</a>
+						</h4>
+					</div>
+					<div id="Q120" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>If any person-</p>
+							<ol><li>deducts from the wages of a member the whole or any part of the employer's contribution;</li>
+								<li>fails to submit any return, statement or other document required by the Scheme or submits a false return, statement or other document or makes a false declaration;</li>
+								<li>obstructs any inspector appointed under the Act or the Scheme in the discharge of his duties or fails to produce any record for his inspection;</li>
+								<li>is guilty of contravention of or non-compliance with any other requirement of the Scheme; he would be punished with imprisonment upto 1 year, or fine upto Rs. 4000.00 or with both. {Section 14(2) &amp; Para 76}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q121" class="collapsed" aria-expanded="false">Is failure to submit return continuing offence?</a>
+						</h4>
+					</div>
+					<div id="Q121" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The offence of failure to pay contributions amounts to continuing offence. In all other cases the offence is one committed once and for all. Failure to submit return is not continuing offence.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q122" class="collapsed" aria-expanded="false">What is the purpose of the Employees' Pension Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q122" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The purpose of the Scheme is to provide for:</p>
+							<ol><li>superannuation pension, retiring pension or permanent total disablement pension to employees covered by the Employees' Provident Funds Act, and </li>
+								<li>widow or widower's pension, children pension or orphan pension payable to the beneficiaries of such employees. {Section 6-A(1)}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q123" class="collapsed" aria-expanded="false">Since when the Scheme has come into force?</a>
+						</h4>
+					</div>
+					<div id="Q123" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>By an ordinance No. 13 dated 11-Oct-1995 the President has substituted the "Employees' Pension Scheme 1995" for the "Employees' Family Pension Scheme, 1971." The Employees' Pension Scheme is brought into force from 16-Nov-1995.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q124" class="collapsed" aria-expanded="false">How are the benefits of the Scheme going to be met?</a>
+						</h4>
+					</div>
+					<div id="Q124" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>An appeal lies to the Provident Funds Appellate Tribunal-</p>
+							<ol><li>To meet the expenses for administering the Scheme a fund called the Employees' Pension Fund will be set up and from and out of the contribution payable by the employer under section 6 of the Act a part of contribution representing 8.33 percent will be credited to the Fund. </li>
+								<li>The Central Government will also contribute to the Fund at the rate of 1.16 percent of the pay of the members of the Scheme. It is to be noted that where the pay of the member exceeds Rs. 15000.00 per month, the contribution payable by the employer and the Central Government will be limited to the amount payable on his pay of Rs. 15000.00 only. {Section 6-A &amp; Para 3} </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q125" class="collapsed" aria-expanded="false">To whom the Scheme will apply?</a>
+						</h4>
+					</div>
+					<div id="Q125" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The Scheme will apply to:</p>
+							<ol><li>Employees who have been members of the Employees' Family Pension Scheme 1971;</li>
+								<li>Employees who on or later 16-Nov-1995 become members of the Employees' Provident Fund Scheme, 1952; Employees who have been members of the Employees Provident Fund but not being members of the Employees' Family Pension Scheme opt to join the Employees' Pension Scheme within six months from 16-Nov-1995. {Para 6}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q126" class="collapsed" aria-expanded="false">Can a member opt for commutation of pension?</a>
+						</h4>
+					</div>
+					<div id="Q126" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>A member may opt, on completion of three years from the commencement of the scheme, to commute upto a maximum of one third of his pension son as to receive hundred times the monthly pension so commuted as commuted value of pension. {Para 12-A}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q127" class="collapsed" aria-expanded="false">Who is entitled to get permanent total disablement pension?</a>
+						</h4>
+					</div>
+					<div id="Q127" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>An employee who meets with an accident during employment and as a result thereof is permanently and totally disabled to do all work which he was capable of performing at the time of the accident is entitled to get permanent total disablement pension for his life time</li>
+							<li>To be so entitled the employee need not have rendered any pensionable service but he must have made atleast one month's contribution to the Pension Fund. {Para 15}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q128" class="collapsed" aria-expanded="false">Are the family members of a member entitled to any benefit on the death of the member? </a>
+						</h4>
+					</div>
+					<div id="Q128" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Benefits to the Family - On the death of the member -</p>
+							<ol><li>Window Pension:
+								<ul><li>If the member dies while in service and has paid at least one month's contribution to the Pension Fund; </li>
+									<li>After leaving the service but before attaining the age of 58 years having rendered eligible service to be entitled for receiving pension and till his death he has not claimed reduced pension after the age of 50 years; </li>
+									<li>After commencement of pension on Superannuation/retirement etc.; </li>
+								</ul></li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q129" class="collapsed" aria-expanded="false">In addition to the Window's pension mentioned at </a>
+						</h4>
+					</div>
+					<div id="Q129" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>(a), two children of the member will get 25% of the Window pension, each till the child attains the age of 25 years. If the wife of the deceased member has predeceased; the two Orphan children will get 75% of the Window pension, as their parents to not exist {Para 16}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q130" class="collapsed" aria-expanded="false">What will be the mode of disbursement of pension?</a>
+						</h4>
+					</div>
+					<div id="Q130" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The disbursement of pension will be arranged with agencies like Post Offices, Nationalized Banks or Treasuries. {Para 33} </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q131" class="collapsed" aria-expanded="false">What is the purpose of the Employees' Deposit-Linked Insurance Scheme, 1976 and to whom is it applicable?</a>
+						</h4>
+					</div>
+					<div id="Q131" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>The purpose of the scheme is to provide life insurance benefits to the employees of the establishments covered by the E.P.F. &amp; M.P. Act, 1952. </li>
+							<li>As such the scheme is applicable to the employees of all factories and other establishments covered by the said Act. {Section 6C &amp; Para 1} </li>
+						</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q132" class="collapsed" aria-expanded="false">What is the contribution payable by the employee and the employer under the scheme? </a>
+						</h4>
+					</div>
+					<div id="Q132" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><ol><li>Under the scheme the employee is not required to pay any contribution. </li>
+						<li>The employer is, however, required to pay every month contribution at the rate of 0.5 percent of the total wages of the employees covered by the scheme</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q133" class="collapsed" aria-expanded="false">Has the employer to pay contribution on the entire pay of an employee?</a>
+						</h4>
+					</div>
+					<div id="Q133" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Where the monthly pay of an employee is more than Rs. 15000.00 the contribution payable in respect of him by the employer (and the Central Government) is limited to the amounts payable on monthly pay of Rs. 15000.00 only. {Para 7} }</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q134" class="collapsed" aria-expanded="false">What is the benefit provided under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q134" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The benefit provided under the scheme in the nature of life insurance is as follows. </p>
+							<ol><li>On the death of an employee while in service a lump sum insurance amount is payable to his nominee or family members. </li>
+								<li>The insurance amount is equal to the average balance in the account of the deceased employee in the Provident Fund during a period of 12 months immediately preceding his death. In case the average balance exceeds Rs. 350000 subject to a ceiling of Rs. 600000. {Para 22} </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q135" class="collapsed" aria-expanded="false">Can the employer recover the employer's contribution from the wages of the employees? </a>
+						</h4>
+					</div>
+					<div id="Q135" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The employer is prohibited from recovering the employer's contribution payable by him under the scheme by deducting the same from the wages of employees or in any other manner. {Para 9}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q136" class="collapsed" aria-expanded="false">What is the manner of claiming the insurance-benefit payable under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q136" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The insurance benefit can be claimed by the nominee or the other claimant by making a written application in Form 5(1F) to the Regional Provident Fund Commissioner through the employer under whom the deceased was last employed. {Para 24}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q137" class="collapsed" aria-expanded="false">What is the contribution or deduction percentage for PF?</a>
+						</h4>
+					</div>
+					<div id="Q137" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>As per the latest laws in effect, an employee needs to contribute 12% of PF Gross (Limit to 15000) as PF contribution</li>
+								<li>The employer also needs to contribute 12% of the PF Gross (Limit to 15000) as a contribution to the employee's account. </li>
+								<li>The rate is generally published by the government. In case there is a change in the percentage then we can make the modifications in the PF and Employer PF formula.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q138" class="collapsed" aria-expanded="false">What is PF Basic or PF Gross?</a>
+						</h4>
+					</div>
+					<div id="Q138" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>This is the amount on which the PF contribution or deduction is calculated. Generally in 95% of the companies this is Basic + Basic Arrears + DA + DA Arrears. </li>
+								<li>However, there are always exceptions and some companies want it to be a little different.</li>
+								<li>In that case, we can change the PF Basic formula to cater to the client's requirements.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q139" class="collapsed" aria-expanded="false">Does every employee contribute to PF?</a>
+						</h4>
+					</div>
+					<div id="Q139" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>According to the PF rules (as of 2004), all employees who draw a PF Basic of less than Rs. 15000 have to contribute to PF. </li>
+								<li>This is mandatory. For employees having PF Basic more than Rs. 15000, the deduction/contribution will be on 15000</li>
+								However in most companies, PF is applicable to all employees. There are exceptions (people who do not contribute) but these are few.
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q140" class="collapsed" aria-expanded="false">What is PF Year?</a>
+						</h4>
+					</div>
+					<div id="Q140" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>PF accounting is done from March to February of every year. This period is called as PF Year. This is applicable only to PF and does not have any effect in any other modules.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q141" class="collapsed" aria-expanded="false">What is VPF or Voluntary PF or Voluntary Provident Fund?</a>
+						</h4>
+					</div>
+					<div id="Q141" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>As the name suggests, Voluntary PF is PF contribution by an employee, over and above the mandatory deduction (i.e. over and above the percentage specified by the government). Generally, an employee indicates to the company or payroll people a willingness to contribute to VPF. In this case, the VPF deduction is done. This deduction is purely from the employee's perspective and the employer has no connection to this.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q142" class="collapsed" aria-expanded="false">What is PF Admin charges and PF Admin Charges percentage?</a>
+						</h4>
+					</div>
+					<div id="Q142" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>As the government is maintaining the PF accounts of all employees, it charges companies a certain sum for this. This is called as PF Admin charges.</li>
+								<li>PF Admin charges is generally a percentage of the total PF Basic. This is called as PF Admin percentage. </li>
+								<li>PF Admin charge, is generally a percentage of the total PF Basic. This is known as PF Admin percentage.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q143" class="collapsed" aria-expanded="false">Table1: Summarized Table for PF rates</a>
+						</h4>
+					</div>
+					<div id="Q143" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<td><p><strong>Various Accounts of PF Challan</strong></p></td>
+										<td><p><strong>EMPLOYEE Rate %</strong></p></td>
+										<td><p><strong>EMPLOYER Rate%</strong></p></td>
+									</tr>
+									<tr>
+										<td><p>A/C No1: PF Contribution Account</p></td>
+										<td><p>12%</p></td>
+										<td><p>3.67%</p></td>
+									</tr>
+									<tr>
+										<td><p>A/C No. 2 PF Admin Account</p></td>
+										<td>
+											<p>&nbsp;</p>
+										</td>
+										<td><p>0.65%</p></td>
+									</tr>
+									<tr>
+										<td><p>A/C No. 10 EPS Account</p></td>
+										<td>
+											<p>&nbsp;</p>
+										</td>
+										<td><p>8.33%</p></td>
+									</tr>
+									<tr>
+										<td><p>A/C No. 21 EDLIS Acount</p></td>
+										<td>
+											<p>&nbsp;</p>
+										</td>
+										<td><p>0.5%</p></td>
+									</tr>
+									<tr>
+										<td><p>A/C No. 22 EDLIS Admin Account</p></td>
+										<td>
+											<p>&nbsp;</p>
+										</td>
+										<td><p>0%</p></td>
+									</tr>
+									<tr>
+										<td><p><strong>Total</strong></p></td>
+										<td><p><strong>12%</strong></p></td>
+										<td><p><strong>13.15%</strong></p></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q144" class="collapsed" aria-expanded="false">What is the link between PF and Income Tax?</a>
+						</h4>
+					</div>
+					<div id="Q144" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>As per Indian Tax laws, any contribution done by the employee towards PF can be considered for Section 88 rebate.</li>
+								<li>In Folklore, any deduction done for PF and VPF is automatically considered for Section 88 rebate in the Income Tax module. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q145" class="collapsed" aria-expanded="false">What if Family Pension Fund or FPF or Employee Pension Scheme or EPS?</a>
+						</h4>
+					</div>
+					<div id="Q145" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The contribution made by an employer towards PF is split into contribution towards PF and contribution to another scheme called Pension Scheme.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<h2 class="faqs">THE EMPLOYEES' PROVIDENT FUNDS SCHEME, 1952</h2>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q146" class="collapsed" aria-expanded="false">What is the purpose of the Employees' Provident Funds Scheme, 1952, and to whom is it applicable?</a>
+						</h4>
+					</div>
+					<div id="Q146" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The purpose of the scheme is to establish provident funds for the employees covered by the Employees' Provident Funds Act, 1952. </li>
+								<li>As such, the scheme is applicable to the employees of all factories and other establishments covered by the said Act except those exempted under section 17 thereof. {Section 5 &amp; Para 1}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q147" class="collapsed" aria-expanded="false">Since when the scheme is made applicable to the said factories and other establishments?</a>
+						</h4>
+					</div>
+					<div id="Q147" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The scheme is made applicable to different factories and different establishments from different dates as specified in paragraph 1 of the scheme. {Para 1}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q148" class="collapsed" aria-expanded="false">Who is eligible to become a member of the Fund?:</a>
+						</h4>
+					</div>
+					<div id="Q148" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Every employee employed in or in connection with the work of a factory or other establishment covered by the scheme other than an excluded employee is entitled and required to become a member of the Fund from the date of joining the factory or establishment. An excluded employee shall, on ceasing to be such an employee, be entitled and required to become a member of the Fund from the date he ceased to be such employee. {Para 26}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q149" class="collapsed" aria-expanded="false">Are the persons employed by or through a contractor covered under the Scheme?: </a>
+						</h4>
+					</div>
+					<div id="Q149" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The persons employed by or through a contractor are included in the definition of "employee" under the Employees' Provident Funds Act, 1952, and as such, they are covered under the Scheme. {Para 30}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q150" class="collapsed" aria-expanded="false">What is meant by "excluded employee"?:"</a>
+						</h4>
+					</div>
+					<div id="Q150" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Excluded employee" means-</p>
+							<ol><li>An employee who, having been a member of the Fund, has withdrawn the full amount of his contribution in the Fund (a) on retirement from service after attaining the age of 55 years of (b) before migration from India for permanent settlement abroad; or for taking employment abroad;</li>
+								<li>An employee whose pay at the time he is otherwise entitled to become a member of the Fund, exceeds Rs. 15000.00 per month;</li>
+								<li>A person who, according to the Certified Standing Orders, is an apprentice, or who is declared to be an apprentice by the authority specified in this behalf by the appropriate Government. {Para 2(f)}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q151" class="collapsed" aria-expanded="false">What is the contribution payable by the employer and the employee under the Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q151" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The contribution payable by the employer under the Scheme is 12 percent of the wages of an employee. The contribution payable by the employee under the Scheme is equal to the contribution payable by the employer in respect of such employee. {Section 6 &amp; Para 29}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q152" class="collapsed" aria-expanded="false">Have the employee and the employer to pay contribution on the entire pay of the employee?</a>
+						</h4>
+					</div>
+					<div id="Q152" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Where the monthly pay of an employee exceeds six thousand five hundred rupees the contribution payable by him, and in respect of him by the employer, shall be limited to the amounts payable on a monthly pay of six thousand five hundred rupees. {Para 26-A }</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q153" class="collapsed" aria-expanded="false">On what pay/allowances the P. F. Contributions is to be deducted?</a>
+						</h4>
+					</div>
+					<div id="Q153" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The P. F. Contribution is to be deducted -</p>
+							<ol><li>On basic wages</li>
+								<li>Dearness allowance and the retaining allowance if any.  {Section 6}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q154" class="collapsed" aria-expanded="false">Is it necessary to deduct provident fund contribution from arrears of wages paid to an employee as a result of an award revising his scale of pay?: </a>
+						</h4>
+					</div>
+					<div id="Q154" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Arrears are emoluments earned by the employee while on duty and provident fund contributions have to be deducted from such wages.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q155" class="collapsed" aria-expanded="false">Is it permissible for any member to contribute at a rate higher than the rate or 12 percent? </a>
+						</h4>
+					</div>
+					<div id="Q155" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>A member, if he so desires, may contribute an amount exceeding 12 percent as the case may be but the employer shall not be under an obligation to pay contribution over and above his contribution payable under the Act. {Para 29}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q156" class="collapsed" aria-expanded="false">Is any interest payable on the Provident Fund accumulations of a member?</a>
+						</h4>
+					</div>
+					<div id="Q156" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Compound interest, at a rate determined by the Central Government from time to time, is paid on the amount standing to the credit of a member as on 1st day of April every year. {Para 60}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q157" class="collapsed" aria-expanded="false">Is the employer required to pay administrative charges under the scheme?: </a>
+						</h4>
+					</div>
+					<div id="Q157" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The employer is required to pay administrative charges at the rate of 0.65% percent of the pay payable to the employees in respect of which provident fund contributions are payable. </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q158" class="collapsed" aria-expanded="false">What is the provision of the Scheme in the matter of transfer of members?: </a>
+						</h4>
+					</div>
+					<div id="Q158" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>if a member of the Fund goes from one establishment to another or from one region to another, the balance of his Provident Fund is transferred automatically when new employer registered old UAN of the member </li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q159" class="collapsed" aria-expanded="false">If an employee has a "family", can he make nomination in favour of brother?</a>
+						</h4>
+					</div>
+					<div id="Q159" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No nomination can be made under the E. F. P. Scheme in favour of a person who is not a member of the "family". The word "family" is defined in Para 2(g) of the Scheme and according to the definition brother is not a member of the "family". The nomination made in favour of brother is invalid.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q160" class="collapsed" aria-expanded="false">What is the provision of the Scheme in the matter of nomination by a member?</a>
+						</h4>
+					</div>
+					<div id="Q160" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Each member has to make a nomination to receive the amount standing to his credit in the Fund in the event of his death. </li>
+								<li>If he has a family, he has to nominate one or more persons belonging to his family and none other.  </li>
+								<li>If he has no family he can nominate any person or persons of his choice but if he subsequently acquires a family, such nomination becomes invalid and he will have to make a fresh nomination of one of more persons belonging to his family. </li>
+								<li>A nomination can be modified by the member at any time. {Para 61}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q161" class="collapsed" aria-expanded="false">What are the benefits provided under the Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q161" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The following three kinds of benefits are provided under the scheme: (1) Withdrawal benefit, (2) Benefit of non-refundable advances, (3) Benefit of financing of Life Insurance Policies.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q162" class="collapsed" aria-expanded="false">Withdrawal Benefit</a>
+						</h4>
+					</div>
+					<div id="Q162" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>A member can withdraw the full amount standing to his credit in the Fund in the following circumstances immediately</p>
+							<ol><li>Retirement after attaining the age of 58 years,</li>
+								<li>retirement due to incapacity for work,</li>
+								<li>migration for permanent settlement abroad,</li>
+								<li>mass retrenchment,</li>
+								voluntary retirement,	
+								<li>closer of establishment,</li>
+								<li>transfer to an establishment not covered under the Act,</li>	
+								<li>discharge with payment of retrenchment compensation, etc {Para 69}</li>
+								<li>In all the order cases of leaving services he can withdraw the full amount if he remains unemployed after the waiting period of Six months unemployment.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q163" class="collapsed" aria-expanded="false">Benefit of Non-refundable Advances</a>
+						</h4>
+					</div>
+					<div id="Q163" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>Non-refundable advances from the amount standing to the credit of a member in the Fund can be sanctioned for the following purposes:</p>
+							<ol><li>purchase of a house, {Para 68B}.</li>
+								<li>repayment of a loan, for housing, {Para 68BB}</li>
+								<li>unemployment due to lock-out or temporary closure, {Para 68H}</li>
+								<li>unemployment due to illness, {Para 68J}</li>
+								<li>marriage of a self or of daughter, son, sister or brother, {Para 68K}</li>
+								<li>education of son or daughter, {Para 68K}</li>
+								<li>exceptional calamity, etc. {Para 68L}</li>
+								<li>Withdrawal for investment in Varishta Pension Bima Yojana. {Para 68NNN}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q164" class="collapsed" aria-expanded="false">Benefit of financing of Life Insurance Policies</a>
+						</h4>
+					</div>
+					<div id="Q164" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>This benefit can be available as specified in Paragraphs 62 to 67. {Para 62 to 67}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q165" class="collapsed" aria-expanded="false">Is there any limit prescribed for getting the benefits?:</a>
+						</h4>
+					</div>
+					<div id="Q165" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The scheme provides for payment of benefit by the Commissioner within 30 days from the date of receipt of claim application {Para 72(7)}</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q166" class="collapsed" aria-expanded="false">Who is entitled to receive the accumulations in the Provident Fund account of a deceased member?</a>
+						</h4>
+					</div>
+					<div id="Q166" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>On the death of a member the amount standing to his credit in the Fund is payable to his nominee or nominees. If there is no nominee, such amount is payable to his family members in the manner specified in Paragraph 70 of the Scheme or in their absence to the legal heir. {Para 70}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q167" class="collapsed" aria-expanded="false">How does a member know the position of his Provident Fund account?: </a>
+						</h4>
+					</div>
+					<div id="Q167" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Every year the Commissioner for Employees' Provident Fund sends to each member, through the employer, a statement of his account in the Fund showing the opening balance, the amount contributed during the year, withdrawal during the year, the amount of interest and the closing balance. If the member finds any error in the statement, he has to bring it to the notice of the Commissioner within 6 months from the receipt of the statement. {Para 73}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q168" class="collapsed" aria-expanded="false">What are the offences under the Scheme and what is the punishment for them?</a>
+						</h4>
+					</div>
+					<div id="Q168" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>If any person-</p>
+							<ol><li>deducts from the wages of a member the whole or any part of the employer's contribution;</li>
+								<li>fails to submit any return, statement or other document required by the Scheme or submits a false return, statement or other document or makes a false declaration;</li>
+								<li>obstructs any inspector appointed under the Act or the Scheme in the discharge of his duties or fails to produce any record for his inspection;</li>
+								<li>is guilty of contravention of or non-compliance with any other requirement of the Scheme; he would be punished with imprisonment upto 1 year, or fine upto Rs. 4000.00 or with both. {Section 14(2) &amp; Para 76}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q169" class="collapsed" aria-expanded="false">Is failure to submit return continuing offence?</a>
+						</h4>
+					</div>
+					<div id="Q169" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The offence of failure to pay contributions amounts to continuing offence. In all other cases the offence is one committed once and for all. Failure to submit return is not continuing offence. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<h2 class="faqs">THE EMPLOYEES' DEPOSIT-LINKED INSURANCE SCHEME, 1976</h2>
+				
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q170" class="collapsed" aria-expanded="false">What is the purpose of the Employees' Deposit-Linked Insurance Scheme, 1976 and to whom is it applicable?: </a>
+						</h4>
+					</div>
+					<div id="Q170" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The purpose of the scheme is to provide life insurance benefits to the employees of the establishments covered by the E. P. F. &amp; M. P. Act, 1952.</li>
+								<li>As such the scheme is applicable to the employees of all factories and other establishments covered by the said Act. {Section 6C &amp; Para 1}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q171" class="collapsed" aria-expanded="false">Since when the scheme has come into force?: </a>
+						</h4>
+					</div>
+					<div id="Q171" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The scheme has come into force from 1-Aug-1976 {Para 1}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q172" class="collapsed" aria-expanded="false">What is the contribution payable by the employee and the employer under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q172" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Under the scheme the employee is not required to pay any contribution. </li>
+								<li>The employer is, however, required to pay every month contribution at the rate of 0.5 percent of the total wages of the employees covered by the scheme. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q173" class="collapsed" aria-expanded="false">Has the employer to pay contribution on the entire pay of an employee?</a>
+						</h4>
+					</div>
+					<div id="Q173" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Where the monthly pay of an employee is more than Rs. 15000.00 the contribution payable in respect of him by the employer (and the Central Government) is limited to the amounts payable on monthly pay of Rs. 15000.00 only</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q174" class="collapsed" aria-expanded="false">What is the benefit provided under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q174" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The benefit provided under the scheme in the nature of life insurance is as follows</p>
+							<ol><li>On the death of an employee while in service a lump sum insurance amount is payable to his nominee or family members. </li>
+								<li>The insurance amount is equal to the average balance in the account of the deceased employee in the Provident Fund during a period of 12 months immediately preceding his death. In case the average balance exceeds Rs. 35000.00 subject to a ceiling of Rs. 60000.00. {Para 22}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q175" class="collapsed" aria-expanded="false">Can the employer recover the employer's contribution from the wages of the employees?</a>
+						</h4>
+					</div>
+					<div id="Q175" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The employer is prohibited from recovering the employer's contribution payable by him under the scheme by deducting the same from the wages of employees or in any other manner. {Para 9}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q176" class="collapsed" aria-expanded="false">What is the manner of claiming the insurance-benefit payable under the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q176" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The insurance benefit can be claimed by the nominee or the other claimant by making a written application in Form 5(1F) to the Regional Provident Fund Commissioner through the employer under whom the deceased was last employed. {Para 24}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q177" class="collapsed" aria-expanded="false">Is it permissible to exempt any establishment from the operation of the scheme?</a>
+						</h4>
+					</div>
+					<div id="Q177" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>The Employees' Provident Funds and Miscellaneous Provisions Act, 1952, permits the Central Government, subject to specified conditions, to exempt any establishment from the operation of all or any or the provisions of the scheme if the employees of such establishments are, without making any separate contribution or payment of premium, in enjoyment of life insurance benefits which are more favorable than the benefits admissible under the scheme. {Section 17(2A)}</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<h2 class="faqs"> Whether the member is required to be registered on Member Portal to file the</h2>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q178" class="collapsed" aria-expanded="false">Transfer Claim online?</a>
+						</h4>
+					</div>
+					<div id="Q178" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>Yes, the member is required to be registered on Member Portal to file the Transfer Claim online. The detailed process flow for the registration is available at the link available on the Homepage of EPFO website www.epfindia.gov.in. This can be accessed through the link </p>
+							<p>For Employees &gt; Online Transfer Claim Portal (OTCP) &gt; Detailed Instructions &gt;</p>
+							<p>Process flow for registration on Member Portal or at the URL</p>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q179" class="collapsed" aria-expanded="false">What are the pre-requisite conditions to file the Transfer Claim online?</a>
+						</h4>
+					</div>
+					<div id="Q179" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The following are the pre-requisites to file the Transfer Claim online:</p>
+							<ol><li>Both previous and present member IDs (P.F. Account No.) should be available in EPFO database.</li>
+								<li>The employer should have registered the digital signature certificate of his authorized signatories with EPFO.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q180" class="collapsed" aria-expanded="false">How does a member get to know that he is eligible to file the Transfer Claim online?</a>
+						</h4>
+					</div>
+					<div id="Q180" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The member can check the eligibility to file the Transfer Claim Online at the link available on the Homepage of EPFO website www.epfindia.gov.in. This can be accessed through the link - For Employees &gt; Online Transfer Claim Portal (OTCP) &gt; Check eligibility to file Online Transfer Claim or at the URL http://memberclaims.epfoservices.in.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q181" class="collapsed" aria-expanded="false">What are the reasons that member ID is not available in EPFO database?</a>
+						</h4>
+					</div>
+					<div id="Q181" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>The member ID may not be available in EPFO database mainly due to following reasons:</p>
+							<ol><li>The employer has not yet submitted the return [Electronic Challan cum Return (ECR) or earlier returns prior to ECR] having the member ID.</li>
+								<li>The employer has submitted the return [Electronic Challan cum Return or earlier returns prior to ECR] having the member ID, but the same has not been updated on the portal. The updation of OTCP has been planned on weekly basis.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q182" class="collapsed" aria-expanded="false">Whether member can edit his details i.e. fatherâ€™s name, relationship, date of birth, date of joining, date of exit as available in the EPFO database?</a>
+						</h4>
+					</div>
+					<div id="Q182" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>No, the member cannot edit his details i.e. fatherâ€™s name, relationship, date of birth,date of joining, date of exit as available in the EPFO database.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q183" class="collapsed" aria-expanded="false">What should a member do if he finds that his previous employment details as available in the EPFO database are incorrect?</a>
+						</h4>
+					</div>
+					<div id="Q183" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>While filing the online transfer claim, if the member finds that his previous employment details as available in the EPFO database are incorrect, he can click on the â€œThe following information is incorrectâ€ . </li>
+								<li>The fields would become editable. After entering the correct details in the relevant fields, he has to take a printout of the letter generated (in PDF form), sign it and submit to concerned EPFO office through the previous employer. </li>
+								<li>The online claim can only be submitted with revised details only after the same is rectified by the concerned office after receipt of the letter. Any online claim submitted prior to rectification would be submitted with the available data only. </li>
+								<li>Alternatively, the member can submit the physical claim through his employer.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q184" class="collapsed" aria-expanded="false">What would happen if the member fills up date of birth which is different from that available in EPFO database?</a>
+						</h4>
+					</div>
+					<div id="Q184" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The Memberâ€™s date of birth, if available in EPFO database, would act as validation while the claim is filed by the member. The member would be allowed three attempts to fill up the date of birth for validation against the date of birth in EPFO database (available on the basis of member details furnished by the employer). After three unsuccessful attempts, the memberâ€™s ID would be blocked for online submission of claim.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q185" class="collapsed" aria-expanded="false">Which employer should member submit his claim to for attestation, in case both of his employers â€“ previous and present - have registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO?</a>
+						</h4>
+					</div>
+					<div id="Q185" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>In case both of his employers â€“ previous and present - have registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO, the member can submit his claim to either of the employers for attestation. </li>
+								<li>If the member details pertaining to previous employment are completely available in EPFO database, the member can submit the claim through either of the employers and the process for settlement would involve similar steps after the claim has been attested by the employer.</li>
+								<li>It may be noted that in case, the member details pertaining to previous employment are not completely available in EPFO database, although the member can submit the claim through either of the employers, the process for settlement of claim through previous employer would take relatively less time as all his member details with the previous employment would get verified along with the attestation of the claim by previous employer. </li>
+								<li>In such cases, if the claim has been submitted through the present employer, the verification task of the member details with the previous employment would be sent to the previous employer in addition to the claim attestation by the present employer, which might take relatively more time.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q186" class="collapsed" aria-expanded="false">Whether the member can file online claim if only his previous employer has  registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO?</a>
+						</h4>
+					</div>
+					<div id="Q186" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Yes, the member can file online claim only through his previous employer if only his previous employer has registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q187" class="collapsed" aria-expanded="false">Whether the member can file online claim if only his present employer has registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO?</a>
+						</h4>
+					</div>
+					<div id="Q187" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>Yes, the member can file online claim through his present employer if only his present employer has registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO subject to the availability of the member details pertaining to previous employment in EPFO database.</p>
+							<p>However, if the member details pertaining to previous employment are not completely available in EPFO database, the member cannot file claim online if only his present employer has registered digital signatures on the Online Transfer Claim Portal (OTCP) portal of EPFO. He is advised to submit the physical claim through either of his employers.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q188" class="collapsed" aria-expanded="false">Which employer should member submit his claim to for attestation, in case his resent establishment is exempted under the Employeesâ€™ Provident Fund Scheme, 1952?</a>
+						</h4>
+					</div>
+					<div id="Q188" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>If the present establishment is exempted under the Employeesâ€™ Provident Fund Scheme, 1952, the member can submit claim only through the present employer as the Bank Account No. and IFS Code of the exempted trust would be required to be furnished for transfer of P.F. accumulations to the bank account of Trust.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q189" class="collapsed" aria-expanded="false">How can a member apply for Transfer Claim in case his previous establishment is exempted under the Employeesâ€™ Provident Fund Scheme, 1952?</a>
+						</h4>
+					</div>
+					<div id="Q189" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The member would fill up the claim application online. On submission, two claims would be generated by the system â€“ one digital claim for transfer of service details from EPF office would move to the employer in online mode for submission through OTCP portal and other physical claim for transfer of P.F. accumulations from exempted trust would be generated in PDF format for physical submission to the previous trust through the employer.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q190" class="collapsed" aria-expanded="false">Is the member required to take a printout of the claim submitted online and give it to the employer after signing it?</a>
+						</h4>
+					</div>
+					<div id="Q190" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>Yes, the member is required to take a printout of the claim submitted online and give it to the employer after signing it</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q191" class="collapsed" aria-expanded="false">Which employer â€“ previous or present â€“ should the member approach after online submission of the claim with the duly signed printout of the claim?</a>
+						</h4>
+					</div>
+					<div id="Q191" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The member is required to approach the employer opted for attestation while filing online submission of the claim with the duly signed printout of the claim form.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q192" class="collapsed" aria-expanded="false">What is the time duration in which the member should submit the duly signed printout of the claim after its online submission?</a>
+						</h4>
+					</div>
+					<div id="Q192" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The member is advised to submit the duly signed printout of the claim after its online submission immediately, but it should not exceed 15 days. The employer would have the option to reject the online claim application after 15 days. In case of any delay beyond this period, the member is advised to contact the authorized signatories/ employer for needful. </p>
+							<p>The contact details of authorized signatories are available under the Employer details in the â€œView the status of Transfer Claimsâ€ under the tab â€œCLAIMâ€.</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q193" class="collapsed" aria-expanded="false">How can a member know that the employer has edited the data furnished by him while filing the claim online?</a>
+						</h4>
+					</div>
+					<div id="Q193" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>In case the employer has edited the data submitted by the member in the Online Transfer Claim form, the member would get a PDF file of the revised claim form as submitted by the employer in the â€œView the status of Transfer Claimsâ€ under the tab â€œCLAIMâ€.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q194" class="collapsed" aria-expanded="false">How can the member get to know the claim status of the claim submitted online by him?</a>
+						</h4>
+					</div>
+					<div id="Q194" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The member would have an updated status of the claim in the â€œView the status of Transfer Claimsâ€ under the tab â€œCLAIMâ€.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q195" class="collapsed" aria-expanded="false">What are the probable reasons for rejection of an online claim by the employer?</a>
+						</h4>
+					</div>
+					<div id="Q195" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<p>The probable reasons for rejection of an online claim form by the employer can be of the following two types:</p>
+							<ol><li>In case of the claim submitted for attestation by previous/ present employer
+								<ul><li>The claim (physical or online) has already been forwarded to EPFO and has not been rejected till date</li>
+									<li>The signed copy of the printout of the claim submitted online has not been received from member. (This option would be available only after 15 days of online submission of the claim)</li>
+									<li>The member details do not match with establishment records</li>
+								<li>The signature of the member does not match with those available in office records.</li></ul>
+								</li><li>In case of verification of member details by previous employer, when the claim has been submitted through present employer
+							</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<h2 class="faqs">Frequently asked Questions (FAQs) on Grievance Redressal </h2>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q196" class="collapsed" aria-expanded="false">What is the nature and source of grievances received in EPFO?</a>
+						</h4>
+					</div>
+					<div id="Q196" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Grievances generally arise out of: </p>
+							<ol><li>Settlement of PF/Pension/Insurance Claims. </li>
+								<li>Transfer of PF accounts. </li>
+								<li>Non enrolment of employees. </li>
+								<li>Difficulties relating to Universal Accounts Number (UAN). </li>
+								<li>Grievances are raised by employers or employees directly. </li>
+								<li>In addition grievances are also referred to by the office of Honâ€™ble Prime Minister, Honâ€™ble Minister of Labour &amp; Em-ployment, Cabinet Secretariat, MPs, MLAs, other VIPs and Department of Personnel and Grievances (DPG) </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q197" class="collapsed" aria-expanded="false">How is Grievance redressal monitored? </a>
+						</h4>
+					</div>
+					<div id="Q197" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Grievance redressal occupies the centre stage in EPFOâ€™s functioning and comprehensive policy guidelines have been issued prescribing strict timelines and to ensure that qualitative improvements in grievance redressal are under-taken. </li>
+								<li>Monitoring is done on a continuous basis and pending grievances are escalated to higher levels depending upon the periodicity of pendency. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q198" class="collapsed" aria-expanded="false">How are grievances registered?</a>
+						</h4>
+					</div>
+					<div id="Q198" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Fill the enclosed form for any grievances</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q199" class="collapsed" aria-expanded="false">What is EPFiGMS? </a>
+						</h4>
+					</div>
+					<div id="Q199" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>EPFiGMS is a self contained internet based grievance redressal system used by EPFO. Using this anybody with a grievance can register his grievance in the system 24x7. Once registered a unique number is allotted to help keep track of the progress of the grievance redressal. Every grievance entered into the EPFiGMS system is monitored on a daily basis, both at the Head office level and the Field office level. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q200" class="collapsed" aria-expanded="false">What is CPGRAMS? </a>
+						</h4>
+					</div>
+					<div id="Q200" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Centralized Public Grievance Redress and Monitoring Sys-tem (CPGRAMS) is a facility made available by the Central Government for any person to register his or her grievance. </li>
+								<li>A PF member can also register his or her grievance on the CPGRAMS portal. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q201" class="collapsed" aria-expanded="false">What is Short Code SMS service? </a>
+						</h4>
+					</div>
+					<div id="Q201" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>A short code SMS service has also been launched for the benefit of EPF members. </li>
+								<li>Using this service, the member who has activated his UAN can send an SMS in the prescribed format from his registered mobile number to 7738299899 to access details of his PF account. The format of the SMS is EPFOHO<uan>LAN. LAN denotes the first three character of the preferred language in which the member desires to get the details. </uan></li>
+								<li>This facility is available in 10 different major Indian languages including Eng-lish and Hindi. A mobile app is also available in Android, downloading which will help EPF members in accessing all their PF related details. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q202" class="collapsed" aria-expanded="false">How to trace out old inoperative EPF account? </a>
+						</h4>
+					</div>
+					<div id="Q202" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>For tracing out such accounts, an online helpdesk is available at EPFO website. </li>
+								<li>Any member desirous of tracing out his old inoperative account in respect of which he does not have full details, can access the helpdesk at www.epfindia.gov.in&gt;&gt;Home &gt;&gt;For employees&gt;&gt; inoperative account helpdesk. The member can register himself on the helpdesk and giving the bare minimum details, he can locate his inoperative account so that he can either get it settled or transfer the same. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q203" class="collapsed" aria-expanded="false">What is UAN Helpdesk? </a>
+						</h4>
+					</div>
+					<div id="Q203" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>UAN helpdesk is a online helpdesk available at EPFOâ€™s website to take care of any query or difficulty regarding Universal Account Number. This can be accessed by any employer or employee. In addition to this there is a toll free number (18001 18005) provided to answer queries regarding UAN. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q204" class="collapsed" aria-expanded="false">Can an EPF member vent his grievance through Social Media? </a>
+						</h4>
+					</div>
+					<div id="Q204" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>An EPF member can approach EPFO for any query or suggestion or grievance settlement through Face book and Twitter. The Face book page and Twitter handle are accessible at: </p>
+							<ol><li>www.facebook.com/socialepfo </li>
+								<li>www.facebook.com/socialepfo </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q205" class="collapsed" aria-expanded="false">What is PF scheme?</a>
+						</h4>
+					</div>
+					<div id="Q205" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Provident Fund is a mandatory, tax-qualified, defined contribution, retiral benefit plan</li>
+								<li>wherein equal contribution at the rate of 12% is made by the employer and the employee</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q206" class="collapsed" aria-expanded="false">Who administers the Scheme / Fund?</a>
+						</h4>
+					</div>
+					<div id="Q206" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>In case of an Unexempt establishment the Regional Provident Fund Commissioner (RPFC) administers and manages the fund. In case of Exempt and Excluded Trusts the Board of Trustees administer the Fund.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q207" class="collapsed" aria-expanded="false">What are the payments made towards an employee for Provident Fund?</a>
+						</h4>
+					</div>
+					<div id="Q207" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employee contribution of 12% of Basic, D.A, and cash value of food concession, if any,</li>
+								<li>Employer contribution of 12% of Basic, D.A, and cash value of food concession if any, out of which</li>
+								<li>8.33% with a cap of Rs.15000/- to be paid towards EPS a/c from the employerâ€™s contribution. Balance goes to the employeeâ€™s Provident Fund Account.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q208" class="collapsed" aria-expanded="false">Can an employee contribute more than the stipulated rate voluntarily? If yes, what is the stipulation for the same?</a>
+						</h4>
+					</div>
+					<div id="Q208" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>An employee can contribute voluntarily over and above the stipulated rate of contribution. However, the contribution to VPF should be a certain % of wages and not a fixed amount. Such voluntary contribution will not be matched by the employer's contribution.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q209" class="collapsed" aria-expanded="false">Can an employee know the PF balance standing to his credit?</a>
+						</h4>
+					</div>
+					<div id="Q209" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Yes. A statement will be issued every year from the Trust / RPFC showing the contributions and interest credited along with other details like transfers received, loans availed etc.</li>
+								<li>In case of RPFC memberâ€™s balances would be known after receipt of annual PF statement from RPFC. This statement would have the opening balances, contributions during the year along with interest credited during the year. The closing balance would include the transfer in received / NRL issued during the year.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q210" class="collapsed" aria-expanded="false">Can an employee transfer his PF accumulations from another Trust / RPFC to present Employer's Trust?</a>
+						</h4>
+					</div>
+					<div id="Q210" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>Excluded employee" means-</p>
+							<ol><li>An employee can transfer his PF accumulations from another Trust / RPFC to his/her Trust by submitting Form 13 or online by using his UAN. This is done only when an employee changes employment.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q211" class="collapsed" aria-expanded="false">For the purpose of membership to PF, is the service with previous employer counted?</a>
+						</h4>
+					</div>
+					<div id="Q211" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>If an employee brings in a transfer from another approved Provident Fund Trust or RPFC then the service rendered with such ex-employer is counted.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q212" class="collapsed" aria-expanded="false">What is nomination?</a>
+						</h4>
+					</div>
+					<div id="Q212" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Every member has to give the details of himself &amp; details of the nominee &amp; family in Form 2.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q213" class="collapsed" aria-expanded="false">What is EPS ?</a>
+						</h4>
+					</div>
+					<div id="Q213" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employee Pension Scheme (EPS) is governed by the â€˜Employeesâ€™ Pension Scheme 1995â€™ and the funds are managed by the RPFC (Regional Provident fund Commissioner). All Employees who are covered under the Un-exempt and Exempt Trust are eligible. Members of the Excluded Trust are not eligible.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q214" class="collapsed" aria-expanded="false">Who will be covered by Employee Pension Scheme?</a>
+						</h4>
+					</div>
+					<div id="Q214" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Every member of the ceased Family Pension Scheme 1971, and anyone who joins any covered establishment on or after 16-11-95 is compulsorily to join this scheme, provided his/her salary/wage is less than Rs. 15000/- per month at the date of appointment.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q215" class="collapsed" aria-expanded="false">How much contribution a member needs to make towards EPS ?</a>
+						</h4>
+					</div>
+					<div id="Q215" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Contributions to EPS are taken from the Employerâ€™s share of PF contribution .It is calculated at 8.33 % of Salary with a Cap of Rs.15000.</li></ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q216" class="collapsed" aria-expanded="false">How many years service is required to be eligible to receive member pension?</a>
+						</h4>
+					</div>
+					<div id="Q216" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body"><p>On completion of ten years or more service in the Employee Pension Scheme and on attaining the age of 58 years the member / family is eligible for the following benefits:</p>
+							<ol><li>Super annuation Pension on attaining of 58 years</li>
+								<li>Retirement Pension if the age is between 50 and 58 years with 3 % reduction of pension for every year falling short of 58 years.</li>
+								<li>Widow Pension on the death of the member.</li>
+								<li>Children Pension up to the Age of 25 years for 2 children at a time.</li>
+								<li>Orphan Pension up to the age of 25 years for 2 children at a time.</li>
+								<li>Disabled Pension</li>
+								<li>Parents Pension</li>
+								<li>Invalidation Pension</li>
+								<li>Withdrawal benefit if the service rendered is more than 6 months and less than 10 years.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q217" class="collapsed" aria-expanded="false">Which withdrawal Forms needs to be filled in for claiming EPS benefits?</a>
+						</h4>
+					</div>
+					<div id="Q217" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>If the period of service is more than 6 months and less than 10 years of service, a member needs to fill in Form 10C.</li>
+								<li>If the pension under EPS is claimed after more than 10 years of service or at the time of retirement , Form 10D needs to be filled in the member</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q218" class="collapsed" aria-expanded="false">Is there any statement issued indicating the contributions made to the EPS?</a>
+						</h4>
+					</div>
+					<div id="Q218" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>EPS is a defined benefit scheme, hence the Employeesâ€™ Provident Fund Organization (EPFO) does not maintain member wise contribution details. It is only in the form of details such as the memberâ€™s date of entry into service, date of leaving, wages, his/her other personal information and settlement is made on the prescribed format under EPS Scheme, taking into account the details mentioned. Therefore, the statements indicating individual member balance are not issued by the EPFO </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q219" class="collapsed" aria-expanded="false">What is EDLI?</a>
+						</h4>
+					</div>
+					<div id="Q219" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Employees' Deposit Linked Insurance Scheme, 1976 (EDLI) the Central Government with the motive of providing additional Social Security in the form of Life Insurance to the family of the deceased member of the Provident Fund, introduced the Employees Deposit Linked Insurance Scheme. \</li>
+								<li>Under this scheme, on the death of an employee, while in service, who is the member of the Employeesâ€™ Provident fund, the persons entitled to receive the provident fund accumulations would be paid an additional amount equal to the average balance in the provident fund account of the deceased during the preceding 12 months. This scheme applies to all the establishments to which the Employees' Provident Fund Scheme applies</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q220" class="collapsed" aria-expanded="false">How much does an employee contribute to EDLI?</a>
+						</h4>
+					</div>
+					<div id="Q220" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>Under this scheme, the employees do not contribute any amount as contribution. </li>
+								<li>However, the employer pays an amount equal to 0.5% of the total wages paid to the employees as contribution.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q221" class="collapsed" aria-expanded="false">What are the benefits available under EDLI to employees?</a>
+						</h4>
+					</div>
+					<div id="Q221" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<ol><li>On the death while in service of the member, the nominee of the deceased shall in addition to PF/EPS accumulation, be paid an amount equal to the average balance in the PF accumulation of the deceased for the preceding twelve months and if the average balance exceeds Rs. 50,000/- then the amount payable shall be Rs. 50,000/- plus 40% in excess of Rs. 50,000/- subject to a maximum of Rs. 1,00,000/- ( One lakh)</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+			</div> 
+			
+			
+			<div class="faq-pdf">
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/AllotmentUAN_UnifiedPortal_TO ANY CITIZEN.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Allotment UAN</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/Employer_Registration_Manual.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Employer Registration</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/ProcessFlow_ECR2.0.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Process Flow ECR</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/TRANSFER OF CLAIM MANUAL.PDF" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Transfer of Claim</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/Shram Suvidha Portal_User_Manual_v1.0 for LIN NO.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Shram Suvidha Portal</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/PMRPY Revised Guidelines ver 2-1.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>PMRPY Portal</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/TRANSFER OF CLAIM MANUAL.PDF" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Transfer of Claim</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/user manual reset the establishment password.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Establishment Password</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/PMRPY Revised Guidelines ver 2-1.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>PMRPY Revised Guidelines</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="pdf">
+						<a href="pdf/Name_DOB_correction_process.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Name DOB Correction Process</span></a>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
