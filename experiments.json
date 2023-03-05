@@ -7,16 +7,13 @@
       "listw":"col-md-4",
       "links":[
 		 {
-            "link":"contacts.html",
-            "text":"Contact page - consolidated",
-            "tags":["APFC","RPFC","ACC","COMP"]
-         },{
-            "link":"circulars.html",
-            "text":"A Consolidated page containing all circulars",
-            "tags":["APFC","RPFC","ACC","COMP"]
-         },{
             "link":"change.html",
             "text":"An example of Change log page",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"d3.html",
+            "text":"Simple d3 visualization",
             "tags":["APFC","RPFC","ACC"]
          },
          {
@@ -42,6 +39,11 @@
          {
             "link":"faq2.html",
             "text":"FAQ concept page 2",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"form11.html",
+            "text":"A basic Form 11 generator",
             "tags":["APFC","RPFC","ACC"]
          }
       ]
