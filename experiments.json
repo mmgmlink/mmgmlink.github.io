@@ -45,6 +45,11 @@
             "link":"form11.html",
             "text":"A basic Form 11 generator",
             "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"task.html",
+            "text":"A basic task visualization",
+            "tags":["APFC","RPFC","ACC"]
          }
       ]
    }
