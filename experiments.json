@@ -7,11 +7,11 @@
       "listw":"col-md-4",
       "links":[
 		 {
-            "link":"contact",
+            "link":"contact.html",
             "text":"Contact page - consolidated",
             "tags":["APFC","RPFC","ACC","COMP"]
          },{
-            "link":"circulars",
+            "link":"circulars.html",
             "text":"A Consolidated page containing all circulars",
             "tags":["APFC","RPFC","ACC","COMP"]
          },{
@@ -20,53 +20,28 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"mem",
-            "text":"Mem Portal - Concept",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"emp",
-            "text":"Employer Portal - Concept",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"http://epfindia.github.io/emp/#!/clm",
-            "text":"Processing page - Concept",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"dashboard",
+            "link":"dashboard.html",
             "text":"Dashboard page concept",
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"delhi",
+            "link":"delhi.html",
             "text":"Pin code list of Bifurcated offices",
             "tags":["APFC","RPFC","ACC"]
          },
 		 {
-            "link":"officecode",
+            "link":"officecode.html",
             "text":"Office Codes",
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"faq",
+            "link":"faq.html",
             "text":"FAQ concept page 1",
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"faq2",
+            "link":"faq2.html",
             "text":"FAQ concept page 2",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"boot/",
-            "text":"Bootstrapped website concept",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"boot/contact_us",
-            "text":"Website search concept",
             "tags":["APFC","RPFC","ACC"]
          }
       ]
