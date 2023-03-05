@@ -49,7 +49,12 @@
 	</div>
 	<h3>Experiments</h3>
 	<div class="row">
-		
+			<iframe
+						allow="microphone;"
+						width="350"
+						height="430"
+						src="https://console.dialogflow.com/api-client/demo/embedded/8bfaabbf-4b7f-48b7-a1f1-3ddd52008e9d">
+					</iframe>
 	</div>		
 </div>	
 <div class="footer-bottom">
@@ -60,45 +65,12 @@
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<div class="design">
-					<iframe
-						allow="microphone;"
-						width="350"
-						height="430"
-						src="https://console.dialogflow.com/api-client/demo/embedded/8bfaabbf-4b7f-48b7-a1f1-3ddd52008e9d">
-					</iframe>
-
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-	</body>
-<script type="text/javascript">
-  var app = angular.module('myApp', ['ngCookies']);
-  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
-                                 $scope.data = [];
-                                 var favoriteCookie = $cookies.get('cookieval');
-  				if ( favoriteCookie ) {
-   					$scope.test= favoriteCookie
-  				} else {
-    					$scope.test='APFC';
-    					$cookies.put('cookieval','');
-  				}
-                                $scope.change = function(text) {
-                                  $scope.test=text;
-                                  $cookies.put('cookieval',text);
-                                 };
-                                 $http({
-                                   method: 'GET',
-                                   url: 'experiments.json'
-                                 }).then(function (success){
-                                   $scope.data = success.data;
-                                 },function (error){
-                                   console.log(error)
-                                 });
-                               }]);
-</script>
-
+</body>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z13ZK89S3K"></script>
 <script>
