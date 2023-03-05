@@ -13,10 +13,14 @@
 </head>
 
 <body>
-    	<div class="container" ng-app="myApp" ng-controller="namesCtrl">
-	<div class="btn-group">
-			<a href="./" class="btn btn-sq-lg btn-default"><i class="fa fa-user"> Back</i></a>
-	</div>
+    <div class="container" ng-app="myApp" ng-controller="namesCtrl">
+		<div class="btn-group">
+				<a href="/" class="btn btn-sq-lg btn-default"><i class="fa fa-home"></i></a>
+				<a href="./circulars.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Circulars</a>
+				<a href="./contacts.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Contacts</a>
+				<a href="./experiments.html" class="btn btn-sq-lg btn-default">Experiments</a>
+				<a href="./chat.html" class="btn btn-sq-lg btn-primary">Talk to Chatbot (Experimental)</a>
+		</div>
 	<h3>Circulars</h3>
 		<h5>updated till 17 Feb, 2023 Wait 2-5 seconds to load</h5>
 
@@ -44,7 +48,7 @@
 
 				
 	<div class="table-responsive">
-            <table class="table table-condensed table-hover table-bordered table-striped">
+		<table class="table table-condensed table-hover table-bordered table-striped">
               <thead>
                 <tr>
                 <th class="col-md-1" >Sr_no.</th>
