@@ -8,6 +8,9 @@
   <loc>https://mmgmlink.github.io/</loc>
 </url>
 <url>
+  <loc>https://mmgmlink.github.io/index.html</loc>
+</url>
+<url>
   <loc>https://mmgmlink.github.io/experiments</loc>
 </url>
 <url>
@@ -17,10 +20,10 @@
 	<loc>https://mmgmlink.github.io/contacts</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/delhi</loc>
+	<loc>https://mmgmlink.github.io/pincodes.html</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/officecode</loc>
+	<loc>https://mmgmlink.github.io/officecode.html</loc>
 </url>
 <url>
 	<loc>https://mmgmlink.github.io/faq</loc>
@@ -41,9 +44,6 @@
 	<loc>https://mmgmlink.github.io/dashboard</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/office</loc>
-</url>
-<url>
 	<loc>https://mmgmlink.github.io/d3</loc>
 </url>
 <url>
@@ -51,5 +51,8 @@
 </url>
 <url>
 	<loc>https://mmgmlink.github.io/problems</loc>
+</url>
+<url>
+	<loc>https://mmgmlink.github.io/task.html</loc>
 </url>
 </urlset>
