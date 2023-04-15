@@ -11,57 +11,69 @@
   </head>
   <body>
 	<div class="container">
-		<h2>Common Problems</h2>
-		<div class="card">
-			<div class="card-header">Probelem 1: Amount returned back from bank for normal claim or transfer out claim to trust</div>
-			<div class="card-body">
-				<ul class="list-group">
-					<li class="list-group-item"><span class="badge badge-success">1. Reason</span> The trust amount rejection occurs rarely but main reason for such returns is that trust name contains special character and the bank does not take special character<a href="#"><span class="badge badge-info"> Link</span></a></li>
-					<li class="list-group-item"><span class="badge badge-success">2. Reason</span> For normal claims this happens due to 1. Account Closed <br/>2. Wrong Account Number <br/>3. Wrong IFSC <br/>4. Dormant bank account<br/> 5. Freezed bank account <br/>6. Credit limit on bank account</li>
-					<li class="list-group-item"><span class="badge badge-warning">3. How to avoid -1</span> Ensure that Bank KYC account is active, open and no credit limit is there in the account</li>
-					<li class="list-group-item"><span class="badge badge-warning">4. How to avoid -1 </span> Ensure that Account number mentioned is correct, IFSC is updated </li>
-					<li class="list-group-item"><span class="badge badge-warning">Process for recrediting </span> Bank will send a reconcillation file to PF office informing the return of amount with reason. <br/> Same will be updated in software. <br/>based on that a communication to Accounts sections will be generated. <br/> Account section will process for recredting the amount to PF account </li>
-				</ul>
-  			</div>
-  		<div class="card-footer text-muted"> </div>
+		<div class="btn-group">
+			<a href="/" class="btn btn-sq-lg btn-default"><i class="fa fa-home"></i></a>
+			<a href="./circulars.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Circulars</a>
+			<a href="./contacts.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Contacts</a>
+			<a href="./experiments.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-default">Experiments</a>
+			<a href="./videos.html" class="btn btn-sq-lg btn-default">Videos</a>
+			<a href="./chat.html" ng-click="change('APFC')" class="btn btn-sq-lg btn-primary">Talk to Chatbot (Experimental)</a>
+		</div>
+		<div class="row">
+			<h2>Common Problems</h2>
+			<div class="card">
+				<div class="card-header">Probelem 1: Amount returned back from bank for normal claim or transfer out claim to trust</div>
+				<div class="card-body">
+					<ul class="list-group">
+						<li class="list-group-item"><span class="badge badge-success">1. Reason</span> The trust amount rejection occurs rarely but main reason for such returns is that trust name contains special character and the bank does not take special character<a href="#"><span class="badge badge-info"> Link</span></a></li>
+						<li class="list-group-item"><span class="badge badge-success">2. Reason</span> For normal claims this happens due to 1. Account Closed <br/>2. Wrong Account Number <br/>3. Wrong IFSC <br/>4. Dormant bank account<br/> 5. Freezed bank account <br/>6. Credit limit on bank account</li>
+						<li class="list-group-item"><span class="badge badge-warning">3. How to avoid -1</span> Ensure that Bank KYC account is active, open and no credit limit is there in the account</li>
+						<li class="list-group-item"><span class="badge badge-warning">4. How to avoid -1 </span> Ensure that Account number mentioned is correct, IFSC is updated </li>
+						<li class="list-group-item"><span class="badge badge-warning">Process for recrediting </span> Bank will send a reconcillation file to PF office informing the return of amount with reason. <br/> Same will be updated in software. <br/>based on that a communication to Accounts sections will be generated. <br/> Account section will process for recredting the amount to PF account </li>
+					</ul>
+				</div>
+				<div class="card-footer text-muted"> </div>
+			</div>
+			<br/><br/>
+			
+			<div class="card">
+				<div class="card-header">Problem 2: Transfer claim from unexempted establishment to unexempted est is settled but amount is not reflected</div>
+				<div class="card-body">
+					<ul class="list-group">
+						<li class="list-group-item"><span class="badge badge-success">Process</span> The transfer claim has to be initiated by transfer out(old) office and 
+							after successful settlement the transfer In is reflected in office pertaining to new account. The transfer in claim has to be processed by new office
+							and the transfer In claim has to be approved. The status shown in Claim status is only the status of Transfer Out claim of previous office. There is a system which checks if the
+							details of transfer in and transfer out claims office are matching, if it is not matching, after settlement of claim at each office the Claim will be forwarded to special role to verify the mismatch.
+							</li>
+						<li class="list-group-item"><span class="badge badge-success">Scenarios</span> Due to this many scenarios are possible in trasfer cases where the claim will be showing 
+							as settled but amount will not be credited:
+							1. Trasfer Out settled but pending at Transfer In office <br/>
+							2. Transfer Out settled but Rejected by Transfer In office <br/>
+							3. Transfer Out settled and settled by Transfer In office <br/>
+							4. Transfer Out Settled but sent to verify mismatch in Transfer Out office <br/>
+							5. Transfer Out Settled, verified mismatch and settled by Transfer In office but sent to Transfer In office <br/>
+							</li>
+						<li class="list-group-item"><span class="badge badge-warning">Outcome</span> There is no member dashboard to show the status of claim in transfer in office and becomes a reason for grievance</li>
+						<li class="list-group-item"><span class="badge badge-warning">Reasons for rejection/mismatch</span> <br/>
+						1. Difference in basic details such as Name, DOB, Gender, Fathers name<br/>
+						2. DOJ and DOE Overlap<br/>
+						3. Uneven contribution<br/>
+						4. EPS membership different in two account<br/>
+						5. Different rate of contribution in EPS in two accounts<br/>
+						</li>
+						<li class="list-group-item"><span class="badge badge-warning">How to avoid:</span> <br/>
+						1. Make sure basic details are matching in both accounts<br/>
+						2. Make sure DOJ and DOE for every past service is updated and correct<br/>
+						3. make sure if there is uneven contribution NCP days are updated<br/>
+						4. EPS membership should be uniform as per eligibility<br/>
+						5. Rate of contribution should be consistant across services<br/>
+						</li>
+					</ul>
+				</div>
+				<div class="card-footer text-muted">2 days ago</div>
+			</div>
+		</div>
 	</div>
-<br/><br/>
-<div class="card">
-	<div class="card-header">Problem 2: Transfer claim from unexempted establishment to unexempted est is settled but amount is not reflected</div>
-  		<div class="card-body">
-    			<ul class="list-group">
-				<li class="list-group-item"><span class="badge badge-success">Process</span> The transfer claim has to be initiated by transfer out(old) office and 
-					after successful settlement the transfer In is reflected in office pertaining to new account. The transfer in claim has to be processed by new office
-					and the transfer In claim has to be approved. The status shown in Claim status is only the status of Transfer Out claim of previous office. There is a system which checks if the
-					details of transfer in and transfer out claims office are matching, if it is not matching, after settlement of claim at each office the Claim will be forwarded to special role to verify the mismatch.
-			    	</li>
-				<li class="list-group-item"><span class="badge badge-success">Scenarios</span> Due to this many scenarios are possible in trasfer cases where the claim will be showing 
-					as settled but amount will not be credited:
-					1. Trasfer Out settled but pending at Transfer In office <br/>
-					2. Transfer Out settled but Rejected by Transfer In office <br/>
-					3. Transfer Out settled and settled by Transfer In office <br/>
-					4. Transfer Out Settled but sent to verify mismatch in Transfer Out office <br/>
-					5. Transfer Out Settled, verified mismatch and settled by Transfer In office but sent to Transfer In office <br/>
-			    	</li>
-				<li class="list-group-item"><span class="badge badge-warning">Outcome</span> There is no member dashboard to show the status of claim in transfer in office and becomes a reason for grievance</li>
-				<li class="list-group-item"><span class="badge badge-warning">Reasons for rejection/mismatch</span> <br/>
-				1. Difference in basic details such as Name, DOB, Gender, Fathers name<br/>
-				2. DOJ and DOE Overlap<br/>
-				3. Uneven contribution<br/>
-				4. EPS membership different in two account<br/>
-				5. Different rate of contribution in EPS in two accounts<br/>
-				</li>
-				<li class="list-group-item"><span class="badge badge-warning">How to avoid:</span> <br/>
-				1. Make sure basic details are matching in both accounts<br/>
-				2. Make sure DOJ and DOE for every past service is updated and correct<br/>
-				3. make sure if there is uneven contribution NCP days are updated<br/>
-				4. EPS membership should be uniform as per eligibility<br/>
-				5. Rate of contribution should be consistant across services<br/>
-				</li>
-			</ul>
-  		</div>
-  	<div class="card-footer text-muted">2 days ago</div>
-</div></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

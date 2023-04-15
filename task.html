@@ -18,7 +18,7 @@
   // Note that static widgets can appear in both Shiny and static modes, but
   // obviously, Shiny widgets can only appear in Shiny apps/documents.
   var shinyMode = window.HTMLWidgets.shinyMode =
-      typeof(window.Shiny) !== "undefined" && !!window.Shiny.outputBindings;
+  typeof(window.Shiny) !== "undefined" && !!window.Shiny.outputBindings;
 
   // We can't count on jQuery being available, so we implement our own
   // version if necessary.

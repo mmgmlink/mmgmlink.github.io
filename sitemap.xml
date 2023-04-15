@@ -11,10 +11,10 @@
   <loc>https://mmgmlink.github.io/index.html</loc>
 </url>
 <url>
-  <loc>https://mmgmlink.github.io/experiments</loc>
+  <loc>https://mmgmlink.github.io/experiments.html</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/circulars</loc>
+	<loc>https://mmgmlink.github.io/circulars.html</loc>
 </url>
 <url>
 	<loc>https://mmgmlink.github.io/contacts</loc>
@@ -26,10 +26,10 @@
 	<loc>https://mmgmlink.github.io/officecode.html</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/faq</loc>
+	<loc>https://mmgmlink.github.io/faq.html</loc>
 </url>
 <url>
-	<loc>https://mmgmlink.github.io/faq2</loc>
+	<loc>https://mmgmlink.github.io/faq2.html</loc>
 </url>
 <url>
 	<loc>https://mmgmlink.github.io/faq2.html?q=116</loc>
@@ -54,5 +54,8 @@
 </url>
 <url>
 	<loc>https://mmgmlink.github.io/task.html</loc>
+</url>
+<url>
+	<loc>https://mmgmlink.github.io/videos.html</loc>
 </url>
 </urlset>
