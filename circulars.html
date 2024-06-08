@@ -46,10 +46,10 @@
               		</thead>
              		<tbody>
                 		<tr ng-repeat="x in circulars | filter:test">
-                    			<td>{{x.sr_no}}</td>
-		    			<td>{{x.subject}}<br/>{{x.ref_no}} {{x.cir_date}}</td>
-		    			<td><a ng-if="x.link_hindi.length!=0" href="http://epfindia.gov.in/site_docs/PDFs/Circulars/Y{{x.financial_year}}/{{x.link_hindi}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
-		    			<td><a ng-if="x.link_eng.length!=0" href="http://epfindia.gov.in/site_docs/PDFs/Circulars/Y{{x.financial_year}}/{{x.link_eng}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
+                    			<td>{{x["SR. NO."]}}</td>
+		    			<td>{{x.SUBJECT}}<br/>{{x.Date}}</td>
+		    			<td><a ng-if="x['ENGLISH VERSION'].length!=0" href="{{x["ENGLISH VERSION"]}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
+		    			<td><a ng-if="x['HINDI VERSION'].length!=0" href="{{x["HINDI VERSION"]}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
                   		</tr>
               		</tbody>
             	</table>
