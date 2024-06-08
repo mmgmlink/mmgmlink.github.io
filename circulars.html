@@ -25,7 +25,7 @@
 			<a class="btn btn-sq-lg btn-default" href="./videos.html">Videos</a>
 		</div>
 		<h3>Circulars</h3>
-		<h5>updated till 17 Feb, 2023 Wait 2-5 seconds to load</h5>
+		<h5>updated till 08 June, 2024 Wait 2-5 seconds to load</h5>
 
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -45,13 +45,21 @@
 				</tr>
               		</thead>
              		<tbody>
-                		<tr ng-repeat="x in circulars | filter:test">
-                    			<td>{{x["SR. NO."]}}</td>
-		    			<td>{{x.SUBJECT}}<br/>{{x.Date}}</td>
-		    			<td><a ng-if="x['ENGLISH VERSION'].length!=0" href="{{x["ENGLISH VERSION"]}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
-		    			<td><a ng-if="x['HINDI VERSION'].length!=0" href="{{x["HINDI VERSION"]}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
-                  		</tr>
-              		</tbody>
+					  <tr *ngFor="let x of circulars | filter:test">
+						<td>{{ x['SR. NO.'] }}</td>
+						<td>{{ x.SUBJECT }}<br/>{{ x.Date }}</td>
+						<td *ngIf="x['ENGLISH VERSION'].length > 0">
+						  <a href="{{ x['ENGLISH VERSION'] }}" target="_blank">
+							<i class="fa fa-file-pdf-o" aria-hidden="true" alt="English circular (PDF)"></i>link (English)
+						  </a>
+						</td>
+						<td *ngIf="x['HINDI VERSION'].length > 0">
+						  <a href="{{ x['HINDI VERSION'] }}" target="_blank">
+							<i class="fa fa-file-pdf-o" aria-hidden="true" alt="Hindi circular (PDF)"></i>link (Hindi)
+						  </a>
+						</td>
+					  </tr>
+					</tbody>
             	</table>
 
 	</div>
