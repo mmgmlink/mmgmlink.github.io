@@ -48,8 +48,8 @@
                 		<tr ng-repeat="x in circulars | filter:test">
                     			<td>{{x.sr}}</td>
 		    			<td>{{x.subject}}<br/>{{x.date}}</td>
-		    			<td><a ng-if="x.hindi.length!=0" href="{{x.hindi}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
-		    			<td><a ng-if="x.english.length!=0" href="{{x.english}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
+		    			<td><a ng-if="x.hindi.length!='NA'" href="{{x.hindi}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
+		    			<td><a ng-if="x.english.length!='NA'" href="{{x.english}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true" alt="link"></i>link</a></td>
                   		</tr>
               		</tbody>
             	</table>
