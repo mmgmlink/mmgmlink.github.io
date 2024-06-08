@@ -78,6 +78,7 @@
                                    url: 'circulars.json'
                                  }).then(function (success){
                                    $scope.circulars = success.data;
+								   console.log(success.data);
                                  },function (error){
                                    console.log(error)
                                  });
